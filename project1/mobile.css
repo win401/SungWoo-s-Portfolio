@@ -26,14 +26,15 @@ h5 {
 
 h6 {
   font-family: "Montserrat", sans-serif;
+  font-size: 1.313rem;
 }
 
 header .header {
   display: flex;
-  position: fixed;
+  position: absolute;
   top: 20px;
   border: 1px solid #ffffff;
-  width: 90%;
+  max-width: 357px;
   justify-content: space-between;
   color: white;
   margin: 0 auto;
@@ -64,7 +65,7 @@ header .header h4 {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 
-header .header h4::after {
+header .header h4::before {
   content: "";
   height: 58px;
   width: 1px;
@@ -72,6 +73,17 @@ header .header h4::after {
   position: absolute;
   right: 0px;
   bottom: 0px;
+}
+
+header .header a::after {
+  content: "";
+  height: 58px;
+  width: 1px;
+  background-color: white;
+  position: absolute;
+  right: 50px;
+  bottom: 0px;
+
 }
 
 header .header menu {
@@ -129,11 +141,23 @@ main .introduce {
 }
 
 main .introduce img {
-  width: 60%;
+  width: 45%;
   position: absolute;
   right: 0;
-  top: 10%;
+  top: 18%;
   z-index: -9;
+}
+
+main .introduce h1 {
+  color: #6F914B;
+}
+
+main .introduce h6 {
+  margin: 15px 0 20px;
+}
+
+main .introduce .sub_text p:last-child {
+  display: none;
 }
 
 /****************** /main introduce *****************/
@@ -145,26 +169,39 @@ main h5 {
 }
 
 main .gallery {
-  gap: 20px;
-  grid-template-columns: repeat(2, 1fr);
+  /* gap: 20px; */
+  /* grid-template-columns: repeat(2, 1fr); */
 }
 
 main .gallery figure {
   position: relative;
+  margin: 10px 0;
 }
+
+main .gallery .line1_img .main1_img,
+main .gallery .line2_img .main2_img {
+  aspect-ratio: 1;
+}
+
 
 main .gallery figcaption {
   position: absolute;
   bottom: 5px;
   right: 5px;
   color: white;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
 }
+
+
 main .gallery .black {
-  /* color: black; */
+  color: black;
+  right: 100px;
 }
 
 main .gallery figcaption span {
   display: block;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 main .gallery .line1_img .main1_img {
@@ -180,8 +217,9 @@ main .gallery .small_img {
   display: flex;
 }
 
-main .gallery .safari_img + .palm_img img {
-  width: 100%;
+main .gallery .long_img {
+  aspect-ratio: 175/300;
+  margin: 10px;
 }
 
 main .gallery .line2_img figure:nth-child(1) {
@@ -189,8 +227,8 @@ main .gallery .line2_img figure:nth-child(1) {
 }
 
 main .gallery .line2_img figure:nth-child(1) img {
-  height: 100%;
-  object-fit: cover;
+  /* height: 100%;
+  object-fit: cover; */
 }
 
 /* /gallery */
@@ -208,8 +246,17 @@ main .flower {
   margin: 150px 0;
 }
 
+main .flower h1 {
+  font-size: 6.25rem;
+}
+
+main .flower h1 span {
+  display: none;
+}
+
 main .flower h5 {
   margin: 0;
+  font-size: 1.25rem;
 }
 
 main .flower .flower_img {
@@ -251,10 +298,26 @@ main .history ul {
   grid-template-columns: 1fr 1fr;
 }
 
+main .history p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
 main .history ul li {
   text-align: center;
   position: relative;
 }
+
+main .history figure figcaption h6,
+main .history figure figcaption p {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+}
+
+main .history h6 {
+  font-size: 1.125rem;
+}
+
 main .history ul li .out {
   background-color: white;
   width: 20px;
@@ -334,8 +397,10 @@ main .contents figure img {
 /************** news *************/
 
 main .news h6 {
-  width: 80%;
-  margin: 0 auto;
+  /* width: 80%; */
+  /* margin: 0 auto; */
+  font-size: 1rem;
+  margin-bottom: 20px;
 }
 
 main .news .left_text {
@@ -345,12 +410,18 @@ main .news .left_text {
 
 main .news .left_text ul li {
   width: 100%;
-  margin: 20px 0;
+  padding: 20px 0;
   display: block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   border-bottom: 1px solid #879a82;
+  font-size: 0.875rem;
+}
+
+main .news .left_text ul li:last-child {
+  border: none;
+  text-align: center;
 }
 
 main .news .right_text {
@@ -360,17 +431,36 @@ main .news .right_text {
 
 main .news .right_text table {
   width: 100%;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+main .news .right_text table td {
+  border: 1px solid #879a82;
+  height: 45px;
+}
+
+main .news .right_text table th {
+  color: white;
+  border: 1px solid white;
+
 }
 
 main .news .right_text table thead {
   background-color: #879a82;
   height: 45px;
-  color: white;
+  border: 2px solid #879a82;
+}
+
+
+main .news .right_text table tbody {
+  height: 45px;
 }
 
 main .news .right_text ul {
   list-style-type: disc;
   padding: 20px;
+  font-size: 0.875rem;
 }
 
 /* /news */
@@ -385,8 +475,17 @@ main .location .textbox {
   padding: 30px;
 }
 
+main .location .textbox ul span {
+  display: block;
+}
+
 main .location .textbox h6 {
   margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+main .location .textbox ul {
+  font-size: 0.875rem;
 }
 
 /* /location */
@@ -397,10 +496,51 @@ footer .footer_img {
   background: url(./images/DSC01690\ 1.png) no-repeat 50% / cover;
   aspect-ratio: 1;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer .footer_img h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 60px;
+}
+
+footer .footer_img .icon {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer .footer_img .icon img {
+  width: 7%;
 }
 
 footer .footer_text {
   background-color: #222222;
   color: white;
   padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  justify-content: space-between;
+  height: 60vh;
+  font-size: 0.875rem;
+}
+
+footer .footer_text ul:first-child li {
+  margin-bottom: 10px;
+}
+
+footer .footer_text ul:nth-child(2) li:first-child {
+  margin-bottom: 10px;
+}
+
+footer .footer_text ul:nth-child(2) li:nth-child(2) {
+  margin-bottom: 70px;
+}
+
+footer .footer_text ul:last-child li:first-child {
+  margin-bottom: 10px;
 }
