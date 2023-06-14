@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>hallimpark</title>
 
   <!-- minireset -->
@@ -21,19 +21,20 @@
 
 <body>
   <header>
-    <div class="header menu">
+    <div class="header_menu">
       <h4>hallimpark</h4>
-      <menu>
-        <li>한림공원 소개</li>
-        <li>테마9</li>
-        <li>365꽃세상</li>
-        <li>즐길거리</li>
-        <li>공원소식</li>
-      </menu>
-      <menu>
-        <li>log in</li>
-        <li>회원가입</li>
-      </menu>
+      <div class="menubar">
+        <menu class="sub_menu">
+          <li>한림공원 소개</li>
+          <li>테마9</li>
+          <li>365꽃세상</li>
+          <li>즐길거리</li>
+          <li>공원소식</li>
+        </menu>
+        <menu class="login">
+          <p>login | 회원가입</p>
+        </menu>
+      </div>
       <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
           <path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
         </svg></a>
@@ -48,7 +49,7 @@
 
     <!--------------- introduce ---------------->
     <div class="introduce">
-      <h1 class="green_text">Introduce hallimpark</h1>
+      <h1 class="green_text">Introduce<span> hallimpark</span></h1>
       <div class="sub_text">
         <h6>Jeju's Nature-Friendly Park</h6>
         <p>제주 한림공원은 1971년 창업인 송봉규 선생이 10만여평의 황무지 모래밭에 야자수 씨앗을 파종하여 녹색의 낙원으로 만든 개척정신이 살아있는 현장입니다. </p>
@@ -268,20 +269,23 @@
       <h5>location</h5>
       <!-- * 카카오맵 - 지도퍼가기 -->
       <!-- 1. 지도 노드 -->
-      <div id="daumRoughmapContainer1686640129857" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+      <div id="daumRoughmapContainer1686640129857" style="width:100%"
+        class="root_daum_roughmap root_daum_roughmap_landing"></div>
 
       <script charset="UTF-8" class="daum_roughmap_loader_script"
         src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
       <!-- 3. 실행 스크립트 -->
-      <script charset="UTF-8">
-        new daum.roughmap.Lander({
-          "timestamp": "1686640129857",
-          "key": "2f5gd",
-          "mapWidth": "390",
-          "mapHeight": "390"
-        }).render();
-      </script>
+      <div class="kakaomap">
+        <script charset="UTF-8">
+          new daum.roughmap.Lander({
+            "timestamp": "1686640129857",
+            "key": "2f5gd",
+            // "mapWidth": "370",
+            "mapHeight": "390"
+          }).render();
+        </script>
+      </div>
       <div class="textbox">
         <div class="text_box1">
           <h6>네비게이션 검색</h6>
