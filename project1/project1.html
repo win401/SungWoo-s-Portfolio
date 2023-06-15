@@ -115,17 +115,21 @@
     <!------------- flower -------------------->
     <div class="flower">
       <h5>hallimpark's flower</h5>
-      <h1>seasonal flowers<span>hallimpark</span></h1>
-      <p>6월 여름의 문턱, 한림공원 수국 동산에 수국 꽃들이 시원시원하게 만발했습니다.</p>
-      <span class="btn"><a href="#">수국 갤러리<svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960"
-            width="48">
-            <path d="m702-301-43-42 106-106H120v-60h646L660-615l42-42 178 178-178 178Z" />
-          </svg></a></span>
-      <div class="flower_img grid">
-        <img src="./images/flower1.png" alt="연꽃 이미지">
-        <img src="./images/flower2.png" alt="들꽃 이미지">
-        <img src="./images/flower3.png" alt="핑크뮬리 이미지">
-        <img src="./images/flower4.png" alt="벚꽃 이미지">
+      <h1>seasonal flowers<span class="text">hallimpark</span></h1>
+      <div class="gallery_flex">
+        <div class="gallery_text">
+          <p>6월 여름의 문턱, 한림공원 수국 동산에 수국 꽃들이 시원시원하게 만발했습니다.</p>
+          <span class="btn"><a href="#">수국 갤러리<svg xmlns="http://www.w3.org/2000/svg" height="48"
+                viewBox="0 -960 960 960" width="48">
+                <path d="m702-301-43-42 106-106H120v-60h646L660-615l42-42 178 178-178 178Z" />
+              </svg></a></span>
+        </div>
+        <div class="flower_img grid">
+          <img src="./images/flower1.png" alt="연꽃 이미지">
+          <img src="./images/flower2.png" alt="들꽃 이미지">
+          <img src="./images/flower3.png" alt="핑크뮬리 이미지">
+          <img src="./images/flower4.png" alt="벚꽃 이미지">
+        </div>
       </div>
     </div>
     <!---------------- /flowers ----------------->
@@ -136,7 +140,7 @@
       <ul>
         <li>
           <span class="out"><span class="in"></span></span>
-          <p>1970</p>
+          <p class="year">1970</p>
           <figure>
             <img src="./images/history1.png" alt="개발의지 이미지">
             <figcaption>
@@ -148,7 +152,7 @@
         </li>
         <li>
           <span class="out"><span class="in"></span></span>
-          <p>1982</p>
+          <p class="year">1982</p>
           <figure>
             <img src="./images/history2.png" alt="놀이동산 이미지">
             <figcaption>
@@ -160,7 +164,7 @@
         </li>
         <li>
           <span class="out"><span class="in"></span></span>
-          <p>1996</p>
+          <p class="year">1996</p>
           <figure>
             <img src="./images/history3.png" alt="수석관 이미지">
             <figcaption>
@@ -172,7 +176,7 @@
         </li>
         <li>
           <span class="out"><span class="in"></span></span>
-          <p>2010</p>
+          <p class="year">2010</p>
           <figure>
             <img src="./images/history4.png" alt="새정원 이미지">
             <figcaption>
@@ -188,19 +192,20 @@
     <!---------------- /history --------------->
 
     <!------------ contents --------------->
+
+    <h5>contents</h5>
     <div class="contents">
-      <h5>contents</h5>
       <figure>
         <img src="./images/contents1.png" alt="야자수카페 이미지">
         <figcaption>야자수카페</figcaption>
       </figure>
       <figure class="hidden">
         <img src="./images/contents2.png" alt="앵무새먹이체험 이미지">
-        <figcaption>야자수카페</figcaption>
+        <figcaption>앵무새먹이체험</figcaption>
       </figure>
       <figure class="hidden">
         <img src="./images/contents3.png" alt="다화원휴게소 이미지">
-        <figcaption>야자수카페</figcaption>
+        <figcaption>다화원휴게소</figcaption>
       </figure>
     </div>
     <!------------- /contents -------------->
@@ -210,15 +215,25 @@
 
       <div class="left_text">
         <h6>한림공원의 다양한 소식</h6>
-        <ul>
-          <li>'정열의 꽃! 부겐빌레아' 2023년 부겐빌레아 축제 개최</li>
-          <li>한국청소년육성회 대표단 방문 (2023. 5. 24)</li>
-          <li>제12차 재일제주인 돕기 특별모금 기부 언론보도(제민일보,헤드라인제주 2023. 5. 10)</li>
-          <li>의인 김만덕 나눔 정신 확산 동참(제민일보 2023. 4. 25)</li>
-          <li>송산섭 한림공원 대표, 외교부장관 표창(제민일보 2023. 4 .13)</li>
-          <li>한림공원, 튤림축제 언론보도(제주의 소리, 제주일보, 연합뉴스, 한라일보)</li>
-          <li>more</li>
-        </ul>
+        <div class="ul_flex">
+          <ul>
+            <li>'정열의 꽃! 부겐빌레아' 2023년 부겐빌레아 축제 개최</li>
+            <li>한국청소년육성회 대표단 방문 (2023. 5. 24)</li>
+            <li>제12차 재일제주인 돕기 특별모금 기부 언론보도(제민일보,헤드라인제주 2023. 5. 10)</li>
+            <li>의인 김만덕 나눔 정신 확산 동참(제민일보 2023. 4. 25)</li>
+            <li>송산섭 한림공원 대표, 외교부장관 표창(제민일보 2023. 4 .13)</li>
+            <li>한림공원, 튤림축제 언론보도(제주의 소리, 제주일보, 연합뉴스, 한라일보)</li>
+            <li>more</li>
+          </ul>
+          <ul>
+            <li>2일전</li>
+            <li>2023-05-24</li>
+            <li>2023-05-13</li>
+            <li>2023-05-07</li>
+            <li>2023-05-07</li>
+            <li>2023-05-07</li>
+          </ul>
+        </div>
       </div>
       <div class="right_text">
         <h6>한림공원 이용안내</h6>
@@ -313,11 +328,11 @@
       </div>
     </div>
     <!-------------- /location -------------->
-
   </main>
+
   <footer>
     <div class="footer_img">
-      <h1>Hallim park with nature</h1>
+      <h1>Hallim park<span>with nature</span></h1>
       <div class="icon">
         <img src="./images/facebook-logo.png" alt="">
         <img src="./images/instagram.png" alt="">

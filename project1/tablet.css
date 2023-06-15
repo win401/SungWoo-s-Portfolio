@@ -6,6 +6,10 @@ h1 {
   font-size: 6.25rem;
 }
 
+h5 {
+  margin-top: 100px;
+}
+
 header .menu {
   display: flex;
   justify-content: space-between;
@@ -39,4 +43,212 @@ main .introduce h1 {
 
 main .introduce h1 span {
   display: inline;
+}
+
+main .introduce .sub_text h6 {
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+
+main .introduce .sub_text p {
+  font-size: 1.125rem;
+}
+
+main .introduce .sub_text p:last-child {
+  display: block;
+  margin-top: 30px;
+}
+
+/* /introduce */
+
+/*************** gallery **************/
+
+main .gallery .line1_img .main1_img {
+  height: 28.75rem;
+}
+
+main .gallery .line2_img {
+  display: flex;
+  gap: 10px;
+  margin: 0 10px;
+}
+main .gallery .line2_img .small_img {
+  gap: 10px;
+  margin-right: 10px;
+}
+
+main .gallery .line2_img figure {
+  aspect-ratio: 175/300;
+  margin: 0;
+}
+
+main .gallery .line2_img figure img {
+  object-fit: cover;
+}
+
+main .gallery .line2_img figure {
+  /* width: 20%; */
+}
+
+main .gallery figure {
+  margin: 0;
+}
+
+/* /gallery */
+
+/*************** flower **************/
+
+main .flower {
+  height: 88.125rem;
+}
+
+main .flower h1 .text {
+  display: block;
+  border: none;
+}
+
+main .flower .flower_img {
+  display: block;
+  display: grid;
+  width: 34.375rem;
+  height: 43.75rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+main .flower .gallery_flex {
+  display: flex;
+}
+
+main .flower .gallery_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 20px;
+  height: 100%;
+}
+
+main .flower .flower_img img {
+  /* width: 10%; */
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+main .flower .flower_img img:first-child {
+  /* grid-row: span 3; */
+  grid-row: span 2;
+}
+
+main .flower .flower_img img:last-child {
+  grid-column: span 2;
+  height: 60%;
+}
+
+/* /flower */
+
+/*************** history *************/
+
+main .history ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+main .history figure {
+  padding: 20px;
+}
+
+main .history figure h6 {
+  white-space: nowrap;
+}
+
+/* /history */
+
+/********** contents **********/
+
+main .contents {
+  margin: 50px 0;
+}
+
+main .contents .hidden {
+  display: block;
+}
+
+main .contents {
+  display: flex;
+  gap: 10px;
+}
+
+main .contents figure {
+  aspect-ratio: 570 / 380;
+}
+
+/************ news ***********/
+
+main .news .left_text .ul_flex ul:last-child {
+  display: block;
+}
+
+main .news .right_text {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* /news */
+
+/************** location ************/
+
+main .location .textbox {
+  height: 50vh;
+  padding: 30px;
+}
+
+main .location .textbox h6 {
+  font-size: 1.563rem;
+  font-weight: 500;
+}
+
+main .location .textbox ul {
+  font-size: 1rem;
+}
+
+main .location .textbox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* place-content: center; */
+}
+
+/* /location */
+
+/*************** footer _img *************/
+
+footer .footer_img {
+  aspect-ratio: 1024 / 700;
+}
+
+footer .footer_img h1 {
+  line-height: 120px;
+  font-size: 8.125rem;
+}
+
+footer .footer_img h1 span {
+  display: block;
+}
+
+/*************** footer _icon *************/
+
+footer .footer_img .icon img {
+  width: 5%;
+}
+
+/*************** footer_text **************/
+
+footer .footer_text {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+footer .footer_text ul:last-child {
+  grid-column: span 2;
 }

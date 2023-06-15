@@ -210,7 +210,7 @@ main .gallery figure {
 
 main .gallery .line1_img .main1_img,
 main .gallery .line2_img .main2_img {
-  aspect-ratio: 1;
+  /* aspect-ratio: 1; */
 }
 
 main .gallery figcaption {
@@ -241,7 +241,11 @@ main .gallery img {
   object-fit: cover;
 }
 
-main .gallery .small_img {
+main .gallery .line2_img .small_img {
+  display: flex;
+}
+
+main .gallery .line1_img .small_img {
   display: flex;
 }
 
@@ -261,11 +265,11 @@ main .gallery .line2_img figure:nth-child(1) img {
 
 /* /gallery */
 
-/************** flowers **************/
+/************** flower **************/
 
 main .flower {
   background-color: #879a82;
-  height: 80.3667vh;
+  height: 46.563rem;
   color: white;
   display: flex;
   flex-direction: column;
@@ -276,6 +280,7 @@ main .flower {
 
 main .flower h1 {
   font-size: 6.25rem;
+  text-shadow: #555555 1px 1px 5px;
 }
 
 main .flower h1 span {
@@ -289,6 +294,16 @@ main .flower h5 {
 
 main .flower .flower_img {
   display: none;
+}
+
+main .flower .gallery_text {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 20px;
+  gap: 50px;
+  /* text-align: center; */
 }
 
 main .flower span {
@@ -328,7 +343,13 @@ main .history ul {
 
 main .history p {
   font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+main .history .year {
   font-weight: 500;
+  font-size: 1.1rem;
 }
 
 main .history ul li {
@@ -431,9 +452,31 @@ main .news h6 {
   margin-bottom: 20px;
 }
 
-main .news .left_text {
+main .news {
   width: 100%;
-  padding: 30px;
+}
+
+main .news .left_text .ul_flex {
+  display: flex;
+  /* width: 100%; */
+  justify-content: space-between;
+  padding: 10px;
+}
+
+main .news .left_text .ul_flex ul {
+  width: 100%;
+  /* padding: 10px; */
+}
+
+main .news .left_text .ul_flex ul:last-child {
+  text-align: end;
+  display: none;
+}
+
+main .news .left_text {
+  width: 90%;
+  /* padding: 30px; */
+  margin: 0 auto;
 }
 
 main .news .left_text ul li {
@@ -447,7 +490,7 @@ main .news .left_text ul li {
   font-size: 0.875rem;
 }
 
-main .news .left_text ul li:last-child {
+main .news .left_text ul:first-child li:last-child {
   border: none;
   text-align: center;
 }
@@ -485,7 +528,7 @@ main .news .right_text table tbody {
 
 main .news .right_text ul {
   list-style-type: disc;
-  padding: 20px;
+  padding: 20px 20px 20px 40px;
   font-size: 0.875rem;
 }
 
@@ -493,8 +536,12 @@ main .news .right_text ul {
 
 /***************** location ***************/
 
+main .location .textbox h6 {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
 main .location .textbox {
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -513,11 +560,6 @@ main .location .textbox h6 {
 main .location .textbox ul {
   font-size: 0.875rem;
 }
-
-/* main .location .kakao {
-  height: 30vh;
-  width: 100%;
-} */
 
 /* /location */
 
