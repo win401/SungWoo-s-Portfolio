@@ -58,7 +58,7 @@ main .gallery .line2_img {
 /************** flower *************/
 
 main .flower {
-  height: 100vh;
+  height: 110vh;
 }
 
 main .flower h5 {
@@ -74,4 +74,22 @@ main .flower h1 {
 main .flower h1 span {
   font-size: 14.375rem;
   text-indent: -300px;
+}
+
+main .flower .flower_img {
+  position: absolute;
+  z-index: 99;
+  right: 50px;
+  /* bottom: 50%; */
+}
+
+/* footer */
+
+footer .port {
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+footer .port:hover {
+  color: orange;
 }
