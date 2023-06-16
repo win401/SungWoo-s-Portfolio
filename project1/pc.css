@@ -59,8 +59,26 @@ main .gallery .line2_img {
 
 main .flower {
   height: 110vh;
+  position: relative;
+  margin-bottom: 50vh;
+}
+
+main .flower h1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+
+main .flower h5 {
+  position: absolute;
+  top: 10%;
 }
 
 main .flower .flower_img {
   width: 50%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
 }
