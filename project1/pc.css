@@ -1,3 +1,74 @@
 @charset "utf-8";
 
 /************ header ************/
+
+header .header_menu .menubar .sub_menu {
+  visibility: visible;
+  gap: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header h1 {
+  font-size: 8rem;
+}
+
+header h3 {
+  font-size: 2.5rem;
+}
+
+/* /header */
+
+/************* gallery ************/
+
+main .gallery .line1_img {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  /* aspect-ratio: 1; */
+  height: 50vw;
+  margin-bottom: 7vw;
+}
+
+main .gallery .line1_img .main1_img {
+  grid-column: span 2;
+  grid-row: span 3;
+  height: 100%;
+}
+
+main .gallery .line1_img .small_img {
+  grid-column: span 1;
+  grid-row: span 2;
+  margin-left: 7vw;
+  gap: 2vw;
+}
+
+main .gallery .long_img {
+  margin: 0;
+}
+
+main .gallery .line2_img {
+  padding: 0 30px;
+}
+
+/* /gallery */
+
+/************** flower *************/
+
+main .flower {
+  height: 100vh;
+}
+
+main .flower h5 {
+  /* font-size: 11.25rem; */
+}
+
+main .flower h1 {
+  font-size: 11.25rem;
+}
+
+main .flower h1 span {
+  font-size: 14.375rem;
+}
