@@ -67,8 +67,11 @@ main .flower h5 {
 
 main .flower h1 {
   font-size: 11.25rem;
+  text-indent: 100px;
+  line-height: 300px;
 }
 
 main .flower h1 span {
   font-size: 14.375rem;
+  text-indent: -300px;
 }
