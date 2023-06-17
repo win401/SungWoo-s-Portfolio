@@ -94,6 +94,7 @@ header .header_menu .menubar .login {
   transform: translateY(-50%);
   /* padding: 20px; */
 }
+
 header .header_menu .menubar .sub_menu {
   position: absolute;
   left: 180px;
@@ -107,12 +108,10 @@ header .header_menu .menubar menu header .header_menu menu li {
   white-space: nowrap;
 }
 
-header .header_menu a {
+header .header_menu .icon {
   width: 80px;
   height: 100%;
-  aspect-ratio: 1;
-  display: grid;
-  place-content: center;
+  /* aspect-ratio: 1; */
   /* padding: 5px; */
   position: absolute;
   right: 0;

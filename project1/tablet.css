@@ -72,6 +72,7 @@ main .gallery .line2_img {
   gap: 10px;
   margin: 0 10px;
 }
+
 main .gallery .line2_img .small_img {
   gap: 10px;
   margin-right: 10px;
@@ -199,8 +200,9 @@ main .news .right_text {
 
 /************** location ************/
 
+
 main .location .textbox {
-  height: 50vh;
+  height: 70vh;
   padding: 30px;
 }
 
