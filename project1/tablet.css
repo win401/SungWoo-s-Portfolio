@@ -241,7 +241,8 @@ footer .footer_img h1 span {
 /*************** footer _icon *************/
 
 footer .footer_img .icon img {
-  width: 5%;
+  /* width: 5%; */
+  width: 25%;
 }
 
 /*************** footer_text **************/

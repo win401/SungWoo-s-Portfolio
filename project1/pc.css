@@ -239,7 +239,7 @@ main .flower h5 {
 main .flower .flower_img {
   width: 50%;
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 50%;
 }
 
@@ -249,6 +249,7 @@ main .flower .flower_img {
 
 main .news {
   display: flex;
+  padding: 100px 0;
 }
 
 main .news h6 {
@@ -279,7 +280,9 @@ main .location .textbox .text_box2 {
 /*************** footer _img *************/
 
 footer .footer_img .icon img {
-  width: 4%;
+  /* width: 4%; */
+  width: 15%;
+  padding-top: 50px;
 }
 
 footer .footer_text {
@@ -294,4 +297,12 @@ footer .footer_text ul:last-child {
 
 footer .footer_text ul {
   padding-left: 50px;
+}
+
+footer .footer_img .icon a {
+  transition: 0.5s;
+}
+
+footer .footer_img .icon a:hover {
+  transform: translateY(-10px);
 }

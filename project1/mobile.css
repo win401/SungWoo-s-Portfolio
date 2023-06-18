@@ -585,8 +585,12 @@ footer .footer_img .icon {
   justify-content: space-evenly;
 }
 
+footer .footer_img .icon a {
+  text-align: center;
+}
+
 footer .footer_img .icon img {
-  width: 7%;
+  width: 30%;
 }
 
 footer .footer_text {
