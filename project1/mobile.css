@@ -83,6 +83,10 @@ header .header_menu .menubar menu {
   visibility: hidden;
 }
 
+header .header_menu .menubar .login {
+  visibility: hidden;
+}
+
 header .header_menu .menubar menu li {
   /* padding: 20px; */
 }
