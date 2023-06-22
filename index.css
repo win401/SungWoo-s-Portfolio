@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+.flex {
+  display: flex;
+}
+
+header .menu_text {
+  width: 100%;
+  justify-content: space-between;
+  padding: 30px;
+  position: absolute;
+  top: 0;
+  color: white;
+  z-index: 9;
+}
+
+header .background_wall {
+  background: linear-gradient(-15deg, #24243a 40%, #52519c);
+  width: 100%;
+  height: 100vh;
+}
+
+header .radius_background {
+  background: linear-gradient(
+    -15deg,
+    #faff00 10%,
+    #fe543b 30%,
+    #f54a7d 50%,
+    #6259a8 70%,
+    #4d41ae 100%
+  );
+  width: 100rem;
+  aspect-ratio: 1;
+  position: absolute;
+  top: -50%;
+  left: -5%;
+  border-radius: 50%;
+}
+
+header .radius_background img {
+  width: 81.25rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
