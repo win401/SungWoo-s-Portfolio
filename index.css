@@ -8,7 +8,14 @@ h1 {
   font-family: "Six Caps", sans-serif;
   text-transform: uppercase;
   font-size: 20rem;
-  /* color: white; */
+  color: black;
+}
+
+h2 {
+  font-family: "Six Caps", sans-serif;
+  text-transform: uppercase;
+  font-size: 12rem;
+  color: white;
 }
 
 .flex {
@@ -89,6 +96,7 @@ header .main_project h1 {
 
 main {
   height: 200vh;
+  /* overflow: hidden; */
 }
 
 main .main_top {
@@ -103,15 +111,229 @@ main .main_top svg {
 }
 
 main .main_text {
-  height: 500vh;
+  height: 600vh;
   background-color: #7d83d1;
   padding-top: 800px;
+  color: white;
+  position: relative;
+  z-index: -9;
 }
+
+main .main_text h2 {
+  text-indent: 200px;
+  margin-bottom: 400px;
+}
+
 main .main_top .shadow_gradient {
   overflow: hidden;
 }
 
 main .main_top .shadow_gradient svg {
-  width: 1900px;
+  width: 100%;
   padding-top: 100px;
+}
+
+main .main_text p {
+  font-size: 2rem;
+  margin-bottom: 100px;
+  width: 83%;
+  padding-left: 250px;
+}
+
+main .main_text .gradient {
+  /* background-color: lightblue; */
+  width: 50rem;
+  height: 100rem;
+  /* aspect-ratio: 1; */
+  position: absolute;
+  top: 10%;
+  right: 0;
+  /* border-radius: 50%; */
+  overflow: hidden;
+  position: absolute;
+}
+
+main .main_text .gradient img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+
+main .main_text .main_illust {
+  position: absolute;
+  top: 25%;
+}
+
+main .main_text .main_illust .cycling {
+  position: absolute;
+  top: 52%;
+  left: 75%;
+  width: 20%;
+  animation-name: cycling;
+  animation-duration: 2.5s;
+  animation-duration: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform-origin: bottom;
+  /* animation-fill-mode: forwards; */
+}
+
+@keyframes cycling {
+  0% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(15deg);
+  }
+}
+
+main .main_text .main_illust .stone1 {
+  position: absolute;
+  top: 70%;
+  left: 90%;
+  width: 20px;
+  animation-name: stone;
+  animation-duration: 2s;
+  animation-duration: linear;
+  animation-iteration-count: infinite;
+  /* animation-direction: alternate; */
+}
+main .main_text .main_illust .stone2 {
+  position: absolute;
+  top: 70%;
+  left: 92%;
+  width: 25px;
+  animation-name: stone_2;
+  animation-duration: 3s;
+  animation-duration: linear;
+  animation-iteration-count: infinite;
+  transform: rotate(-10deg);
+  /* animation-direction: alternate; */
+}
+
+@keyframes stone {
+  0% {
+    transform: translate(0);
+    opacity: 0;
+  }
+
+  50% {
+    /* transform: translate(50px, -40px); */
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: translate(60px, -40px);
+    opacity: 0;
+  }
+}
+
+@keyframes stone_2 {
+  0% {
+    transform: translate(0);
+    opacity: 0;
+  }
+
+  50% {
+    /* transform: translate(50px, -40px); */
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: translate(70px, -20px);
+    opacity: 0;
+  }
+}
+
+main .main_text .main_illust .climing {
+  position: absolute;
+  top: 84%;
+  left: 14%;
+  width: 20%;
+  transform: rotate(10deg);
+  animation-name: climing;
+  animation-duration: 5s;
+  animation-duration: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform-origin: top;
+}
+
+@keyframes climing {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+main .main_text .main_illust .stone3 {
+  position: absolute;
+  top: 95%;
+  left: 32%;
+  width: 20px;
+  animation-name: stone_3;
+  animation-duration: 2.5s;
+  animation-duration: linear;
+  animation-iteration-count: infinite;
+  /* animation-direction: alternate; */
+  /* transform-origin: top; */
+}
+main .main_text .main_illust .stone4 {
+  position: absolute;
+  top: 95%;
+  left: 12%;
+  width: 10px;
+  animation-name: stone_3;
+  animation-duration: 2s;
+  animation-duration: linear;
+  animation-iteration-count: infinite;
+}
+main .main_text .main_illust .stone5 {
+  position: absolute;
+  top: 90%;
+  left: 10%;
+  width: 18px;
+  animation-name: stone_3;
+  animation-duration: 1.5s;
+  animation-duration: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes stone_3 {
+  0% {
+    transform: rotate(10deg);
+    transform: translate(0);
+    opacity: 0;
+  }
+
+  50% {
+    /* transform: translate(50px, -40px); */
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: rotate(20deg);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+}
+
+/*********************** skill ************************/
+
+main .main_text .skill {
+  padding-top: 120vh;
+  overflow: hidden;
+  position: relative;
+}
+
+main .main_text .skill h1 {
+  /* text-indent: 50%; */
+  position: absolute;
+  top: 80%;
+  right: 0;
 }
