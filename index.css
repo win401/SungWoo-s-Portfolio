@@ -1,7 +1,7 @@
 @charset "utf-8";
 
-main {
-  /* overflow: hidden; */
+body {
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 h1 {
@@ -95,8 +95,9 @@ header .main_project h1 {
 /*************************** main ****************************/
 
 main {
-  height: 200vh;
+  height: 650vh;
   /* overflow: hidden; */
+  position: relative;
 }
 
 main .main_top {
@@ -111,17 +112,17 @@ main .main_top svg {
 }
 
 main .main_text {
-  height: 600vh;
-  background-color: #7d83d1;
+  height: 650vh;
+  background: linear-gradient(#7d83d1 80%, #111);
   padding-top: 800px;
   color: white;
   position: relative;
   z-index: -9;
 }
 
-main .main_text h2 {
+main .main_text .about {
   text-indent: 200px;
-  margin-bottom: 400px;
+  margin-bottom: 300px;
 }
 
 main .main_top .shadow_gradient {
@@ -143,12 +144,10 @@ main .main_text p {
 main .main_text .gradient {
   /* background-color: lightblue; */
   width: 50rem;
-  height: 100rem;
-  /* aspect-ratio: 1; */
+  height: 120rem;
   position: absolute;
   top: 10%;
   right: 0;
-  /* border-radius: 50%; */
   overflow: hidden;
   position: absolute;
 }
@@ -156,8 +155,8 @@ main .main_text .gradient {
 main .main_text .gradient img {
   width: 100%;
   position: absolute;
-  top: 50%;
-  left: 10%;
+  top: 70%;
+  left: 30%;
   transform: translateY(-50%);
 }
 
@@ -326,14 +325,87 @@ main .main_text .main_illust .stone5 {
 /*********************** skill ************************/
 
 main .main_text .skill {
-  padding-top: 120vh;
-  overflow: hidden;
+  margin-top: 135vh;
   position: relative;
+  overflow: hidden;
+  padding-left: 200px;
 }
 
 main .main_text .skill h1 {
-  /* text-indent: 50%; */
+  text-indent: 65%;
+}
+
+main .main_text .skill h2 {
+  margin: 0;
+  padding: 0;
+}
+
+main .main_text .skill h5 {
+  font-size: 3.125rem;
+  font-weight: 900;
+}
+
+main .main_text .skill ul {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 30px 0 100px 0;
+}
+
+main .main_text .skill .text {
+  gap: 25%;
+}
+
+main .main_text .skill .text_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+main .footer_gradient {
+  width: 80rem;
+  height: 80rem;
   position: absolute;
-  top: 80%;
-  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -9;
+}
+
+main .img .footer_palm {
+  position: absolute;
+  bottom: -4rem;
+  left: 0;
+  width: 20%;
+}
+
+main .img .bmx {
+  position: absolute;
+  bottom: 1rem;
+  left: 10rem;
+  width: 5%;
+}
+
+main .img .birds {
+  position: absolute;
+  bottom: 7rem;
+  left: 3rem;
+  width: 50%;
+  transform: rotate(18deg);
+}
+
+main .img .stars {
+  position: absolute;
+  bottom: 7rem;
+  left: 3rem;
+  width: 77%;
+  /* transform: rotate(18deg); */
+}
+
+/********************** footer */
+
+footer {
+  height: 30rem;
+  background: linear-gradient(#000, #222);
+  color: white;
+  position: relative;
 }
