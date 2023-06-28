@@ -481,3 +481,27 @@ footer {
   color: white;
   position: relative;
 }
+
+footer img {
+  position: absolute;
+  bottom: 0;
+  width: 30%;
+  animation-name: car;
+  animation-duration: 3s;
+  animation-duration: linear;
+  animation-iteration-count: infinite;
+  /* animation-direction: alternate; */
+  transform-origin: bottom;
+  width: 100%;
+  object-fit: contain;
+}
+
+@keyframes car {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(130%);
+  }
+}
