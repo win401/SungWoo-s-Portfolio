@@ -466,6 +466,7 @@ main .img #light1 {
 main .img #light2 {
   bottom: -1rem;
   right: 40%;
+  width: 11%;
 }
 main .img #light3 {
   bottom: -1rem;
