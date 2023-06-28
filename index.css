@@ -483,6 +483,7 @@ footer {
 }
 
 footer .car {
+  overflow: hidden;
   width: 100%;
 }
 
