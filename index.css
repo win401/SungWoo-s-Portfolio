@@ -482,9 +482,13 @@ footer {
   position: relative;
 }
 
+footer .car {
+  width: 100%;
+}
+
 footer img {
   position: absolute;
-  bottom: 0;
+  bottom: 1rem;
   width: 30%;
   animation-name: car;
   animation-duration: 3s;
@@ -492,16 +496,16 @@ footer img {
   animation-iteration-count: infinite;
   /* animation-direction: alternate; */
   transform-origin: bottom;
-  width: 100%;
+  width: 30%;
   object-fit: contain;
 }
 
 @keyframes car {
   0% {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 
   100% {
-    transform: translateX(130%);
+    transform: translateX(400%);
   }
 }
