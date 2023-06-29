@@ -57,16 +57,19 @@ header .radius_background {
   width: 90rem;
   aspect-ratio: 1;
   position: absolute;
-  top: -50%;
+  /* top: -50%; */
+  bottom: 0;
   left: -5%;
   border-radius: 50%;
   overflow: hidden;
+  /* position: relative; */
 }
 
 header .radius_background .palmtree {
   width: 70rem;
   position: absolute;
-  top: 73%;
+  /* top: 73%; */
+  bottom: -500px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -88,6 +91,17 @@ header .main_project {
 header .main_project h1 {
   /* padding: 50px 0; */
   text-shadow: white -3px 3px;
+}
+
+header .main_project img {
+  position: absolute;
+  top: 120px;
+  right: 600px;
+  opacity: 0;
+}
+
+header .main_project img.active {
+  opacity: 1;
 }
 
 header .main_project span {
@@ -113,6 +127,7 @@ main .main_top svg {
   width: 100%;
   position: absolute;
   top: -60rem;
+  bottom: 0;
 }
 
 main .main_text {
@@ -135,7 +150,7 @@ main .main_top .shadow_gradient {
 
 main .main_top .shadow_gradient svg {
   width: 100%;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 main .main_text p {
@@ -454,22 +469,18 @@ main .img #star6 {
 
 main .img .light {
   position: absolute;
-  bottom: 0;
+  bottom: -1rem;
   right: 10rem;
   width: 12%;
 }
 
 main .img #light1 {
-  bottom: -1rem;
   right: 60%;
 }
 main .img #light2 {
-  bottom: -1rem;
   right: 40%;
-  width: 11%;
 }
 main .img #light3 {
-  bottom: -1rem;
   right: 20%;
 }
 
@@ -513,4 +524,11 @@ footer img {
   100% {
     transform: translateX(400%);
   }
+}
+
+footer .top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  /* color: none; */
 }

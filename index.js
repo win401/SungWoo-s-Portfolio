@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let x = evt.clientX;
     let y = evt.clientY;
 
-    bg1.style.transform = `translate(${-x / 60}px,${y / 60}px)`;
-    gradient.style.transform = `translate(${-x / 60}px,${-y / 60}px)`;
+    bg1.style.transform = `translate(${-x / 15}px,${0}px)`;
+    gradient.style.transform = `translate(${-x / 15}px,${0}px)`;
     star.style.transform = `translate(${-x / 60}px,${-y / 60}px)`;
   });
 });
