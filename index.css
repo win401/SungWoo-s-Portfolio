@@ -1,5 +1,26 @@
 @charset "utf-8";
 
+body::-webkit-scrollbar {
+  width: 8px; /* 스크롤바의 너비 */
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 30%;
+  background: linear-gradient(
+    #faff00 10%,
+    #fe543b 30%,
+    #f54a7d 40%,
+    #6259a8 70%,
+    #4d41ae 100%
+  );
+
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #7d83d1;
+}
+
 body {
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -30,6 +51,11 @@ header .menu_text {
   top: 0;
   color: white;
   z-index: 9;
+}
+
+header .menu_text .flex {
+  gap: 10px;
+  text-transform: uppercase;
 }
 
 header .background_wall {
@@ -76,9 +102,11 @@ header .radius_background .palmtree {
 
 header .radius_background .birds {
   position: absolute;
-  top: 25%;
-  left: 30%;
-  width: 50rem;
+  /* top: 25%; */
+  left: 600px;
+  bottom: 450px;
+  width: 40rem;
+  transform: rotate(30deg);
 }
 
 header .main_project {
@@ -89,19 +117,48 @@ header .main_project {
 }
 
 header .main_project h1 {
-  /* padding: 50px 0; */
+  text-shadow: white -5px 5px 10px;
+  transition: 0.3s;
+  /* z-index: 9999999; */
+}
+
+header .main_project h1:hover {
   text-shadow: white -3px 3px;
 }
 
-header .main_project img {
+header .main_project h1 a {
+  display: block;
+}
+
+header .main_project .project1 {
   position: absolute;
   top: 120px;
-  right: 600px;
+  right: 1000px;
   opacity: 0;
+  transition: 0.5s;
+  border-radius: 100% 0 0 0;
+}
+header .main_project .project2 {
+  position: absolute;
+  top: 520px;
+  right: 1000px;
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: 100% 0 0 0;
 }
 
 header .main_project img.active {
+  width: 700px;
+  object-fit: cover;
+}
+
+header .main_project img.active {
+  /* width: 500px; */
+  /* object-fit: cover; */
   opacity: 1;
+  transition: 0.5s;
+  right: 600px;
+  border-radius: 0;
 }
 
 header .main_project span {
@@ -163,7 +220,7 @@ main .main_text p {
 main .main_text .gradient {
   /* background-color: lightblue; */
   width: 50rem;
-  height: 120rem;
+  height: 150rem;
   position: absolute;
   top: 10%;
   right: 0;
