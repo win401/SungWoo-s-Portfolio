@@ -132,7 +132,7 @@ header .main_project h1 a {
 
 header .main_project .project1 {
   position: absolute;
-  top: 120px;
+  top: 80px;
   right: 1000px;
   opacity: 0;
   transition: 0.5s;
@@ -140,7 +140,7 @@ header .main_project .project1 {
 }
 header .main_project .project2 {
   position: absolute;
-  top: 520px;
+  top: 470px;
   right: 1000px;
   opacity: 0;
   transition: 0.5s;
