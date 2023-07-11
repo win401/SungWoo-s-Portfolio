@@ -22,18 +22,18 @@ body::-webkit-scrollbar-track {
 }
 
 body {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 h1 {
-  font-family: "Six Caps", sans-serif;
+  font-family: 'Six Caps', sans-serif;
   text-transform: uppercase;
   font-size: 20rem;
   color: black;
 }
 
 h2 {
-  font-family: "Six Caps", sans-serif;
+  font-family: 'Six Caps', sans-serif;
   text-transform: uppercase;
   font-size: 12rem;
   color: white;
@@ -80,7 +80,7 @@ header .radius_background {
     #6259a8 70%,
     #4d41ae 100%
   );
-  width: 90rem;
+  width: 80%;
   aspect-ratio: 1;
   position: absolute;
   /* top: -50%; */
