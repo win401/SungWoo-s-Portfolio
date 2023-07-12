@@ -52,11 +52,16 @@ header .menu_text {
   color: white;
   z-index: 999999999999999;
   position: fixed;
+  transition: 0.3s;
 }
 
 header .menu_text .flex {
   gap: 10px;
   text-transform: uppercase;
+}
+
+header .menu_text.active {
+  background-color: #f54a7d;
 }
 
 header .background_wall {
@@ -84,12 +89,10 @@ header .radius_background {
   width: 60%;
   aspect-ratio: 1;
   position: absolute;
-  /* top: -50%; */
   bottom: 0;
   left: -5%;
   border-radius: 50%;
   overflow: hidden;
-  /* position: relative; */
 }
 
 header .radius_background .palmtree {
@@ -360,6 +363,14 @@ header .main_project .project2 {
   transition: 0.5s;
   border-radius: 100% 0 0 0;
 }
+header .main_project .project3 {
+  position: absolute;
+  top: 920px;
+  right: 1000px;
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: 100% 0 0 0;
+}
 
 header .main_project img.active {
   width: 700px;
@@ -427,7 +438,7 @@ main .main_top .shadow_gradient svg {
 main .main_text p {
   font-size: 2rem;
   margin-bottom: 100px;
-  width: 83%;
+  width: 100%;
   padding-left: 250px;
 }
 
@@ -825,8 +836,29 @@ footer .car {
   cursor: pointer;
   opacity: 0;
   transition: 0.3s;
+  animation-name: top;
+  animation-duration: 3s;
+  animation-duration: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  pointer-events: none;
+}
+
+.top_btn:hover {
+  font-size: 2rem;
 }
 
 .top_btn.active {
   opacity: 1;
+  pointer-events: all;
+}
+
+@keyframes top {
+  0% {
+    transform: rotate(25deg);
+  }
+
+  100% {
+    transform: rotate(-25deg);
+  }
 }

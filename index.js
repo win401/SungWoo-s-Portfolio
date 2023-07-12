@@ -26,6 +26,13 @@ $('.pj2').on('mouseenter', () => {
 $('.pj2').on('mouseleave', () => {
   $('.project2').removeClass('active');
 });
+// project3 jyp
+$('.pj3').on('mouseenter', () => {
+  $('.project3').addClass('active');
+});
+$('.pj3').on('mouseleave', () => {
+  $('.project3').removeClass('active');
+});
 
 // to top btn
 
@@ -48,6 +55,24 @@ $('.top_btn').on('click', (e) => {
 });
 
 // header menu btn
+
+$(window).scroll(function () {
+  var scroll = $(window).scrollTop();
+  let project1 = $('.project1').offset().top;
+  if (scroll >= project1) {
+    $('.menu_text').addClass('active');
+  } else {
+    $('.menu_text').removeClass('active');
+  }
+});
+
+$('.top_btn').on('click', (e) => {
+  e.preventDefault();
+  scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+});
 
 //project 버튼
 $('.project_btn').on('click', (e) => {
