@@ -1,0 +1,43 @@
+@charset "utf-8";
+@import url(./ReDisignVariable.css);
+
+/* montserrat / font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+/* notosans kr / font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+.flex {
+  display: flex;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-family: var(--font-mont);
+  /* font-weight: 900; */
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+.more-btn {
+  border: 1px solid black;
+  padding: 10px 20px;
+  font-family: var(--font-mont);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+header .main-text-box h2 {
+  font-family: var(--font-mont);
+  font-weight: 900;
+}
+
+header .main-text-box h2 span {
+  font-size: 0.8rem;
+  display: block;
+}
