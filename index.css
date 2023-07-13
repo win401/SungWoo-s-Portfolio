@@ -43,6 +43,11 @@ h2 {
   display: flex;
 }
 
+/* date */
+header .menu_text .timer-list {
+  gap: 0;
+}
+
 header .menu_text {
   width: 100%;
   justify-content: space-between;
@@ -55,7 +60,7 @@ header .menu_text {
   transition: 0.3s;
 }
 
-header .menu_text .flex {
+header .menu_text menu {
   gap: 40px;
   text-transform: uppercase;
 }
