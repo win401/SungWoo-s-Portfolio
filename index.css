@@ -56,7 +56,7 @@ header .menu_text {
 }
 
 header .menu_text .flex {
-  gap: 10px;
+  gap: 40px;
   text-transform: uppercase;
 }
 
@@ -438,7 +438,7 @@ main .main_top svg {
 main .main_text {
   height: 650vh;
   background: linear-gradient(#7d83d1 80%, #111);
-  padding-top: 800px;
+  padding-top: 500px;
   color: white;
   position: relative;
   z-index: -9;
@@ -486,7 +486,7 @@ main .main_text .gradient img {
 
 main .main_text .main_illust {
   position: absolute;
-  top: 25%;
+  top: 20%;
 }
 
 main .main_text .main_illust .cycling {
@@ -683,6 +683,15 @@ main .main_text .skill .text_grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+}
+
+main .main_text .skill .text_grid ul {
+  grid-column-start: 1;
+}
+
+main .main_text .skill .text_grid h5:last-child {
+  grid-column-start: 2;
+  grid-row-start: 1;
 }
 
 main .footer_gradient {
