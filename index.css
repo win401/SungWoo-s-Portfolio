@@ -134,12 +134,29 @@ header .radius_background .airplane {
   }
 }
 
+header .radius_background .cloud {
+  animation-name: cloud;
+  animation-duration: 30s;
+  animation-duration: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cloud {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(250%);
+  }
+}
+
 header .radius_background .cloud1 {
   position: absolute;
   width: 50%;
   top: 25%;
   left: 10%;
-  z-index: -9;
+  z-index: 9;
+  animation: none;
 }
 header .radius_background .cloud2 {
   position: absolute;
@@ -147,6 +164,7 @@ header .radius_background .cloud2 {
   top: 25%;
   left: 50%;
   z-index: -9;
+  animation-duration: 480s;
 }
 header .radius_background .cloud3 {
   position: absolute;
@@ -154,6 +172,7 @@ header .radius_background .cloud3 {
   top: 23%;
   left: 30%;
   z-index: -9;
+  animation-duration: 500s;
 }
 header .radius_background .cloud4 {
   position: absolute;
@@ -161,6 +180,7 @@ header .radius_background .cloud4 {
   top: 25%;
   left: 65%;
   z-index: -9;
+  animation-duration: 480s;
 }
 header .radius_background .cloud5 {
   position: absolute;
@@ -168,6 +188,7 @@ header .radius_background .cloud5 {
   top: 35%;
   left: 65%;
   z-index: -9;
+  animation-duration: 590s;
 }
 header .radius_background .cloud6 {
   position: absolute;
@@ -175,6 +196,7 @@ header .radius_background .cloud6 {
   top: 40%;
   left: 85%;
   z-index: -9;
+  animation-duration: 530s;
 }
 header .radius_background .cloud7 {
   position: absolute;
@@ -182,6 +204,7 @@ header .radius_background .cloud7 {
   top: 45%;
   left: 75%;
   z-index: -9;
+  animation-duration: 530s;
 }
 
 /* birds svg flying */
@@ -803,6 +826,10 @@ footer {
 footer .text_box {
   padding-left: 50px;
   padding-top: 50px;
+}
+
+footer .text_box h2 {
+  width: 500px;
 }
 
 footer .car img {

@@ -1,3 +1,8 @@
+// aos
+AOS.init({
+  duration: 1200,
+});
+
 const bg1 = document.querySelector('.radius_background');
 const gradient = document.querySelector('.shadow_gradient');
 const star = document.querySelector('#star6');
@@ -54,7 +59,7 @@ $('.top_btn').on('click', (e) => {
   });
 });
 
-// header menu btn
+// menu active 스타일 변경
 
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
@@ -74,6 +79,38 @@ $('.top_btn').on('click', (e) => {
   });
 });
 
+//scroll-up-bar.js
+let prescroll = window.scrollY;
+console.log(prescroll);
+
+$(window).on('scroll', () => {
+  //스크롤시 변수에 저장
+  let scroll = window.scrollY;
+  console.log(scroll);
+  console.log('prescroll00', prescroll);
+
+  // 이전 스크롤값이 크면 트루, 스크루 올리면 헤더보임
+  if (prescroll > scroll) {
+    $('.menu_text').css({ top: 0 });
+  } else {
+    // 이후 스크롤값이 크면 풜스, 스크루 올리면 헤더가려짐
+    $('.menu_text').css({ top: -90 });
+  }
+
+  prescroll = scroll;
+});
+
+// a 기본값 삭제
+$('a[href="#"]').on('click', (e) => {
+  e.preventDefault();
+});
+
+// 메뉴 클릭 페이지 변경시 안보였다가 몇초 뒤에 나타남
+window.addEventListener('load', () => {
+  document.body.classList.add('fade_out');
+});
+
+// header menu btn
 //project 버튼
 $('.project_btn').on('click', (e) => {
   e.preventDefault();
@@ -109,8 +146,6 @@ $('.contect_btn').on('click', (e) => {
     behavior: 'smooth',
   });
 });
-
-// menu active 스타일 변경
 
 var Bird = {
   def: function (n, m, s) {
