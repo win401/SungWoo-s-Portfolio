@@ -1,0 +1,263 @@
+@charset "utf-8";
+
+@import url(../common/style/fonts.css);
+
+.flex {
+  display: flex;
+}
+
+h1,
+h2 {
+  font-family: 'Six Caps', sans-serif;
+}
+
+h1 {
+  font-size: 18.75rem;
+}
+
+h2 {
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 3.125rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  /* margin: 130px 0; */
+}
+
+h4 {
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+
+body {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR',
+    'Malgun Gothic', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.grid {
+  display: grid;
+}
+
+section {
+  width: 90%;
+  border-top: 2px solid #222;
+  margin: 0 auto;
+  padding: 130px;
+  justify-content: space-between;
+}
+
+header {
+  width: 90%;
+  margin: 0 auto;
+  color: #17495e;
+}
+
+.go_back {
+  align-items: center;
+  text-transform: uppercase;
+  gap: 30px;
+  font-size: 1.3rem;
+}
+
+.go_back svg {
+  display: block;
+}
+
+header h2 {
+  margin-top: 50px;
+}
+
+header h2 span {
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui;
+}
+
+header .img_box {
+  margin: 50px auto;
+  justify-content: space-evenly;
+}
+
+header .img_box img {
+  width: 25%;
+  object-fit: contain;
+  margin-right: 30px;
+}
+
+header ul {
+  font-size: 1.563rem;
+  justify-content: center;
+  gap: 20px;
+  font-weight: 500;
+}
+
+header p {
+  font-size: 1.875rem;
+  line-height: 1.5;
+}
+
+header p span {
+  display: block;
+  text-indent: 230px;
+}
+
+/* header end */
+
+/******************* introduce *******************/
+
+.introduce {
+  margin: 0 auto;
+}
+
+.introduce .text_box {
+  width: 40%;
+  margin: 0;
+  font-weight: 500;
+}
+
+.introduce .text_box h5 {
+  margin-top: 75px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.introduce .text_box h5:first-child {
+  margin-top: 0;
+}
+
+/***************** process *****************/
+
+.process ul {
+  padding-right: 200px;
+  list-style: disc;
+}
+
+/***************** work *****************/
+
+.work ul {
+  padding-right: 200px;
+  list-style: disc;
+}
+
+/***************** survey *****************/
+
+.survey ul {
+  padding-right: 200px;
+  list-style: disc;
+}
+
+/***************** swot *****************/
+
+.swot .main_box {
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 50px;
+  margin-top: 80px;
+  position: relative;
+}
+
+.swot .main_box ul:nth-child(2) {
+  grid-column-start: 2;
+  background-color: #164a5e;
+}
+
+.swot .main_box ul {
+  width: 600px;
+  height: 250px;
+  border-radius: 30px;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 120px;
+  list-style: disc;
+}
+
+.swot .main_box ul:nth-child(1) {
+  background-color: #31667b;
+}
+.swot .main_box ul:nth-child(3) {
+  background-color: #164a5e;
+}
+
+.swot .main_box ul:nth-child(4) {
+  background-color: #31667b;
+}
+
+/* sub box */
+.swot .sub_box {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.swot .sub_box p {
+  width: 210px;
+  height: 60px;
+  background-color: #fff;
+  border: 2px solid #31667b;
+  border-radius: 10px;
+  z-index: 9;
+  text-align: center;
+  padding: 10px;
+}
+
+.swot .sub_box p span {
+  display: block;
+}
+
+/**************** vision ****************/
+
+.vision img {
+  width: 30%;
+}
+
+.vision h4 {
+  padding-top: 150px;
+  color: #17495e;
+}
+
+/**************** style ****************/
+.style .style_box .color_box ul li {
+  width: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  text-indent: -999999px;
+}
+
+.style .style_box .color_box ul .color_73A2BD {
+  background-color: #73a2bd;
+}
+
+.style .style_box .color_box ul .color_B9D0DE {
+  background-color: #b9d0de;
+}
+
+.style .style_box .color_box ul .color_D2EAF8 {
+  background-color: #d2eaf8;
+}
+
+.style .style_box .color_box ul .color_FFA8A8 {
+  background-color: #ffa8a8;
+}
+.style .style_box .color_box ul .color_FFE4C0 {
+  background-color: #ffe4c0;
+}
+.style .style_box .color_box ul .color_333333 {
+  background-color: #333333;
+}
+.style .style_box .color_box ul .color_184A5F {
+  background-color: #184a5f;
+}
+.style .style_box .color_box ul .color_506872 {
+  background-color: #506872;
+}
