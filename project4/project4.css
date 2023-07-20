@@ -43,6 +43,7 @@ body {
     'Malgun Gothic', sans-serif;
   font-size: 17px;
   font-weight: 500;
+  line-height: 1.8;
 }
 
 .grid {
@@ -214,6 +215,7 @@ header p span {
   z-index: 9;
   text-align: center;
   padding: 10px;
+  line-height: 1;
 }
 
 .swot .sub_box p span {
