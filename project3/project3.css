@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+@import url(../common/style/fonts.css);
+
+.flex {
+  display: flex;
+}
+
+h1,
+h2 {
+  font-family: 'Six Caps', sans-serif;
+}
+
+h1 {
+  font-size: 18.75rem;
+}
+
+h2 {
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 3.125rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+body {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR',
+    'Malgun Gothic', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.grid {
+  display: grid;
+}
+
+section {
+  width: 90%;
+  border-top: 2px solid #222;
+  margin: 0 auto;
+  padding: 130px;
+  justify-content: space-between;
+}
+
+header {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.go_back {
+  align-items: center;
+  text-transform: uppercase;
+  gap: 30px;
+  font-size: 1.3rem;
+}
+
+.go_back svg {
+  display: block;
+}
+
+header h2 {
+  margin-top: 50px;
+}
+
+header h2 span {
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui;
+}
+
+header .img_box {
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+
+header .img_box img {
+  width: 50%;
+  object-fit: contain;
+  margin-right: 30px;
+}
+
+header .img_box p {
+  transform: translate(20px, -120px);
+}
+
+header ul {
+  font-size: 1.563rem;
+  justify-content: center;
+  gap: 20px;
+  font-weight: 500;
+}
+
+header p {
+  font-size: 1.875rem;
+  line-height: 1.5;
+}
+
+header p span {
+  display: block;
+  text-indent: 230px;
+}
+
+/* header end */
+
+.goal {
+}
