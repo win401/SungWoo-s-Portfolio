@@ -32,6 +32,11 @@ h4 {
   font-weight: 500;
 }
 
+h5 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
 body {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR',
@@ -227,6 +232,24 @@ header p span {
 }
 
 /**************** style ****************/
+
+.style h3 {
+  margin-bottom: 70px;
+}
+
+.style .style_box {
+  justify-content: space-around;
+}
+
+.style .style_box h5 {
+  font-size: 1.875rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.style .style_box h5:first-child {
+  margin-right: 50px;
+}
 .style .style_box .color_box ul li {
   width: 70px;
   aspect-ratio: 1;
@@ -240,10 +263,12 @@ header p span {
 
 .style .style_box .color_box ul .color_B9D0DE {
   background-color: #b9d0de;
+  transform: translateX(-30px);
 }
 
 .style .style_box .color_box ul .color_D2EAF8 {
   background-color: #d2eaf8;
+  transform: translateX(-60px);
 }
 
 .style .style_box .color_box ul .color_FFA8A8 {
@@ -251,13 +276,191 @@ header p span {
 }
 .style .style_box .color_box ul .color_FFE4C0 {
   background-color: #ffe4c0;
+  transform: translateX(-30px);
 }
 .style .style_box .color_box ul .color_333333 {
   background-color: #333333;
 }
 .style .style_box .color_box ul .color_184A5F {
   background-color: #184a5f;
+  transform: translateX(-30px);
 }
 .style .style_box .color_box ul .color_506872 {
   background-color: #506872;
+  transform: translateX(-60px);
+}
+
+.style .font_main_box .font_sub_box ul {
+  padding-right: 50px;
+}
+
+.style .font_main_box .font_sub_box ul .sub_text {
+  color: #aaaaaa;
+  margin-bottom: 30px;
+}
+
+.style .font_main_box .font_sub_box ul li:first-child {
+  margin: 30px 0;
+  font-size: 1.563rem;
+  font-weight: 500;
+}
+
+.style .font_main_box .font_sub_box .num li:nth-child(5) {
+  font-size: 48px;
+}
+
+.style .font_main_box .font_sub_box .num li:nth-child(5) span:first-child {
+  font-size: 36px;
+}
+
+.style .font_main_box .font_sub_box .num li:nth-child(5) span:last-child {
+  font-size: 32px;
+}
+.style .font_main_box .font_sub_box .num li:nth-child(6) {
+  font-size: 26px;
+}
+
+.style .font_main_box .font_sub_box .num li:nth-child(6) span:first-child {
+  font-size: 24px;
+}
+
+.style .font_main_box .font_sub_box .num li:nth-child(6) span:last-child {
+  font-size: 22px;
+}
+
+.style .font_main_box .font_sub_box .num li:nth-child(7) {
+  font-size: 16px;
+}
+
+.style .font_main_box .font_sub_box .num li:nth-child(7) span:first-child {
+  font-size: 14px;
+}
+
+.style .font_main_box .font_sub_box .num li:nth-child(7) span:last-child {
+  font-size: 12px;
+}
+
+.style .font_main_box .font_sub_box ul:first-child .neo_r {
+  font-family: 'AppleSDGothicNeoR00', 'Noto Sans KR', sans-serif;
+}
+
+.style .font_main_box .font_sub_box ul:first-child .neo_m {
+  font-family: 'AppleSDGothicNeoM00', 'Noto Sans KR', sans-serif;
+}
+
+.style .font_main_box .font_sub_box ul:first-child .neo_sb {
+  font-family: 'AppleSDGothicNeoSB00', 'Noto Sans KR', sans-serif;
+}
+.style .font_main_box .font_sub_box ul:first-child .neo_b {
+  font-family: 'AppleSDGothicNeoSB00', 'Noto Sans KR', sans-serif;
+}
+
+.style .font_main_box .font_sub_box ul:nth-child(2) .lex_r {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 400;
+}
+
+.style .font_main_box .font_sub_box ul:nth-child(2) .lex_m {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 500;
+}
+.style .font_main_box .font_sub_box ul:nth-child(2) .lex_b {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
+}
+
+.style .font_main_box .font_sub_box .num li:last-child(7) {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/********************* prototype *********************/
+
+.prototype h3 {
+  margin-bottom: 70px;
+}
+.prototype .gridbox {
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  gap: 50px;
+}
+
+.prototype .gridbox figure {
+  place-items: center;
+  text-align: center;
+}
+
+.prototype .gridbox figure img {
+  width: 200px;
+}
+
+.prototype .gridbox figure figcaption {
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.prototype .gridbox figure figcaption span {
+  display: block;
+}
+
+/********************* evaluation *********************/
+
+.evaluation {
+  justify-content: space-between;
+}
+
+.evaluation .text_box h5 {
+  margin-top: 50px;
+}
+
+.evaluation .text_box h5:first-child {
+  margin: 0;
+}
+
+.evaluation .text_box {
+  width: 50%;
+}
+
+.evaluation .text_box ul {
+  list-style: disc;
+  padding-left: 30px;
+  margin-top: 20px;
+  width: 80%;
+}
+
+/********************* review *********************/
+
+.review {
+  border-bottom: 1px solid black;
+  margin-bottom: 100px;
+}
+
+.review .text_box {
+  width: 50%;
+}
+
+.review .text_box p {
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.review .text_box a {
+  width: 300px;
+  height: 60px;
+  font-size: 1.563rem;
+  margin-top: 100px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  border: 1px solid #72a2bd;
+  transform: translateX(430px);
+  transition: 0.3s;
+}
+
+.review .text_box a:hover {
+  color: #fff;
+  background-color: #bde7ff;
+}
+
+.review .text_box a img {
+  width: 50%;
 }
