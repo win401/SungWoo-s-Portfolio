@@ -117,5 +117,173 @@ header p span {
 
 /* header end */
 
+/********************* goal ********************/
+
 .goal {
+  font-size: 1.563rem;
+}
+
+.goal ul {
+  list-style: decimal;
+  padding-right: 400px;
+}
+
+/********************* process ********************/
+
+.process {
+  font-size: 1.563rem;
+}
+
+.process ul {
+  list-style: disc;
+  padding-right: 510px;
+}
+
+/********************* work ********************/
+
+.work {
+  font-size: 1.563rem;
+}
+
+.work ul {
+  list-style: disc;
+  padding-right: 570px;
+}
+
+/********************* style ********************/
+
+.style .table_box table {
+  border-spacing: 15px;
+  border-collapse: separate;
+  padding-right: 480px;
+}
+
+.style .color_box {
+  transform: translate(100px, -40px);
+}
+
+.style .color_box span {
+  width: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: block;
+  text-indent: -99999px;
+}
+
+.style .color_box span:first-child {
+  background-color: #f4f4f4;
+  /* border: 1px solid black; */
+}
+
+.style .color_box span:nth-child(2) {
+  background-color: #858585;
+  transform: translateX(-30px);
+}
+
+.style .color_box span:last-child {
+  background-color: #131313;
+  transform: translateX(-60px);
+}
+
+/********************* publishing ********************/
+
+.publishing {
+  padding-right: 430px;
+}
+
+.publishing .text_box a:first-child {
+  display: block;
+  font-size: 1.875rem;
+  border: 2px solid #6f914b;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  width: 300px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.publishing .text_box a:hover {
+  background-color: #6f914b;
+  color: #fff;
+}
+
+.publishing .text_box p {
+  transform: translateX(20px);
+}
+
+.publishing .text_box p svg {
+  transform: translate(0, 10px);
+}
+
+.publishing .text_box a:last-child {
+  display: block;
+  /* font-size: 1.875rem; */
+  border: 2px solid #6f914b;
+  border-radius: 30px;
+  /* width: 300px; */
+  text-align: center;
+  transition: 0.3s;
+  padding: 3px 8px;
+  transform: translateX(10px);
+}
+
+/********************* result ********************/
+
+.result p {
+  width: 40%;
+  transform: translateX(-280px);
+}
+
+/********************* evaluation ********************/
+
+.evaluation .ul_box {
+  width: 40%;
+  transform: translateX(-280px);
+}
+
+.evaluation .ul_box ul:last-child {
+  margin-top: 50px;
+}
+
+.evaluation .ul_box ul li {
+  margin-top: 20px;
+  transform: translateX(15px);
+}
+
+/********************* review ********************/
+
+.review {
+  margin-bottom: 100px;
+  border-bottom: 2px solid #222;
+}
+
+.review .text_box {
+  width: 40%;
+  transform: translateX(-280px);
+}
+
+.review .text_box p:first-child {
+  margin-bottom: 30px;
+}
+
+.review .text_box a {
+  display: block;
+  border: 2px solid #6f914b;
+  border-radius: 30px;
+  width: 350px;
+  height: 60px;
+  font-size: 1.875rem;
+  padding: 0 20px;
+  text-align: center;
+  transition: 0.3s;
+  margin-top: 100px;
+}
+
+.review .text_box a span {
+  font-family: 'Abhaya Libre', serif;
+}
+
+.review .text_box a:hover {
+  background-color: #6f914b;
+  color: #fff;
 }
