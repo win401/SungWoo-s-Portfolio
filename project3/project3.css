@@ -191,6 +191,11 @@ header p span {
   padding-right: 430px;
 }
 
+.publishing ul {
+  list-style: disc;
+  line-height: 2;
+}
+
 .publishing .text_box a:first-child {
   display: block;
   font-size: 1.875rem;
@@ -229,12 +234,20 @@ header p span {
 
 /********************* result ********************/
 
+.result {
+  line-height: 1.6;
+}
+
 .result p {
   width: 40%;
   transform: translateX(-280px);
 }
 
 /********************* evaluation ********************/
+
+.evaluation {
+  line-height: 1.6;
+}
 
 .evaluation .ul_box {
   width: 40%;
@@ -255,6 +268,7 @@ header p span {
 .review {
   margin-bottom: 100px;
   border-bottom: 2px solid #222;
+  line-height: 1.6;
 }
 
 .review .text_box {
