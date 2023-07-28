@@ -1,4 +1,4 @@
-@import 'utf-8';
+@charset 'utf-8';
 
 @import url(../common/style/fonts.css);
 
@@ -38,6 +38,31 @@ header ul {
   width: 90%;
   font-size: 1.125rem;
 }
+
+header a {
+  position: relative;
+  display: block;
+  width: 30px;
+  background: url(./images/menubar.png) no-repeat 50% / contain;
+}
+
+/* header a::before {
+  content: '';
+  background-color: #fff;
+  width: 30px;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+}
+
+header a::after {
+  content: '';
+  background-color: #fff;
+  width: 30px;
+  height: 1px;
+  position: absolute;
+  bottom: 10px;
+} */
 
 /* top */
 
@@ -92,28 +117,77 @@ header ul {
   font-size: 1.563rem;
 }
 
-.middle .mov {
-  overflow: hidden;
+.middle .sns a {
+  z-index: 999;
 }
 
-.middle .mov h1 {
-  font-size: 17.5rem;
-  white-space: nowrap;
-  animation: text_mov 10s infinite;
+.middle p.pt_sans {
+  transform: translateY(10rem);
+  text-decoration: underline;
+}
+
+/* 움직이는 텍스트 */
+.animated-title1 {
   color: #10b3e2;
+  font-size: 17.5rem;
+  font-family: 'Universal Serif';
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 40vh;
+  padding: 100px 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transform: translateY(-5rem);
 }
 
-@keyframes text_mov {
-  0% {
-    transform: translateX(-500%);
+.animated-title1 .track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 80s linear infinite;
+}
+
+.animated-title {
+  color: #10b3e2;
+  font-size: 20rem;
+  font-family: 'Universal Serif';
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 70vh;
+  padding: 100px 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transform: translateY(-5rem);
+}
+
+.animated-title .track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 150s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
   }
 
-  100% {
-    transform: translateX(500%);
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (hover: hover) and (min-width: 700px) {
+  .animated-title .content {
+    -webkit-transform: translateY(calc(100% - 8rem));
+    transform: translateY(calc(100% - 8rem));
   }
 }
 
 .middle .main_images {
+  width: 97%;
   margin: 0 auto;
 }
 
@@ -133,18 +207,43 @@ header ul {
   padding-right: 20rem;
   padding-bottom: 20px;
   justify-content: space-between;
-  font-size: 2.375rem;
+  font-size: 1.875rem;
   width: 97%;
   margin: 10rem auto 3.125rem;
-  border-bottom: 3px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 
 .main .img_box {
+  width: 100%;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   margin: 0 auto;
   place-items: center;
   row-gap: 58px;
+}
+
+.main .img_box img {
+  width: 100%;
+}
+
+.main .img_box figure img {
+  transition: 5s;
+  margin-bottom: 30px;
+}
+
+.main .img_box figure img:hover {
+  animation: img_mov infinite alternate;
+  animation-name: img_mov;
+}
+
+@keyframes img_mov {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(30px);
+  }
 }
 
 .main .img_box figure figcaption h5 {
@@ -191,8 +290,48 @@ header ul {
   color: #10b3e2;
 }
 
+.bottom .left_box {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.bottom .left_box p {
+  font-size: 1.563rem;
+}
+.bottom .left_box p a {
+  text-decoration: underline;
+}
+.bottom .left_box img {
+  width: 200px;
+}
+
 .bottom .right_box {
   flex-direction: column;
+}
+
+.bottom .right_box a {
+  background-color: #5b5b5b;
+  width: 280px;
+  height: 55px;
+  border-radius: 30px;
+  line-height: 55px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom .right_box span {
+  width: 280px;
+  height: 55px;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin-top: 100px;
 }
 
 /* footer */
@@ -207,6 +346,39 @@ footer ul.grid {
 }
 
 footer .text_box {
-  margin: 50px;
+  margin: 50px calc(50px - 12px);
   grid-template-columns: repeat(2, 1fr);
+}
+
+footer .text_box a {
+  text-decoration: underline;
+  display: block;
+  width: 200px;
+  height: 50px;
+}
+
+body {
+  cursor: none;
+  position: relative;
+}
+
+a:hover {
+  /* pointer-events: none; */
+  cursor: none;
+}
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10px;
+  aspect-ratio: 1;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 9999;
+  transition: 0.3s;
+}
+
+.cursor.active {
+  width: 30px;
 }

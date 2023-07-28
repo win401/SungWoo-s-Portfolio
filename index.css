@@ -7,11 +7,13 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
   height: 30%;
-  background: linear-gradient(#faff00 10%,
-      #fe543b 30%,
-      #f54a7d 40%,
-      #6259a8 70%,
-      #4d41ae 100%);
+  background: linear-gradient(
+    #faff00 10%,
+    #fe543b 30%,
+    #f54a7d 40%,
+    #6259a8 70%,
+    #4d41ae 100%
+  );
 
   border-radius: 10px;
 }
@@ -82,12 +84,14 @@ header {
 }
 
 header .radius_background {
-  background: linear-gradient(-15deg,
-      #faff00 20%,
-      #fe543b 40%,
-      #f54a7d 50%,
-      #6259a8 70%,
-      #4d41ae 100%);
+  background: linear-gradient(
+    -15deg,
+    #faff00 20%,
+    #fe543b 40%,
+    #f54a7d 50%,
+    #6259a8 70%,
+    #4d41ae 100%
+  );
   width: 60%;
   aspect-ratio: 1;
   position: absolute;
@@ -481,6 +485,9 @@ main .main_text {
   position: relative;
   z-index: -9;
 }
+main .main_text p {
+  z-index: 999999;
+}
 
 main .main_text .about {
   text-indent: 200px;
@@ -520,11 +527,18 @@ main .main_text .gradient img {
   top: 70%;
   left: 30%;
   transform: translateY(-50%);
+  z-index: -999;
 }
 
 main .main_text .main_illust {
   position: absolute;
   top: 20%;
+  z-index: -99;
+}
+
+main .main_text .main_illust .img {
+  /* display: none; */
+  width: 100%;
 }
 
 main .main_text .main_illust .cycling {
@@ -737,7 +751,7 @@ main .main_text .skill .text_grid h5:last-child {
 }
 
 main .footer_gradient {
-  width: 80%;
+  width: 100%;
   height: 80rem;
   position: absolute;
   bottom: 0;
@@ -824,7 +838,8 @@ main .img #star4 {
   transform-origin: bottom;
 }
 
-main .img #star5 {}
+main .img #star5 {
+}
 
 main .img #star6 {
   left: 20%;
