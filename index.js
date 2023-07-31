@@ -50,11 +50,20 @@ $('.pj2').on('mouseenter', () => {
 $('.pj2').on('mouseleave', () => {
   $('.project2').removeClass('active');
 });
+
 // project3 jyp
 $('.pj3').on('mouseenter', () => {
   $('.project3').addClass('active');
 });
 $('.pj3').on('mouseleave', () => {
+  $('.project3').removeClass('active');
+});
+
+// project4 jyp
+$('.pj4').on('mouseenter', () => {
+  $('.project3').addClass('active');
+});
+$('.pj4').on('mouseleave', () => {
   $('.project3').removeClass('active');
 });
 

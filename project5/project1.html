@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>project1</title>
+    <link rel="stylesheet" href="../common/style/minireset.min.css">
+    <link rel="stylesheet" href="./project1.css">
+</head>
+
+<body>
+    <header>
+        <div class="go_back flex">
+            <a href="https://win401.github.io/SungWoo-s-Portfolio/">
+                <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+                    <path d="M398.077-253.847 171.924-480l226.768-226.768 32.615 31.614-172.462
+                 172.462h529.846v45.384H258.845l171.846 171.846-32.614 31.615Z" />
+                </svg></a><span>portfolio</span>
+        </div>
+        <h2>project1 : helinox <span>리뉴얼 사이트</span></h2>
+        <div class="img_box flex">
+            <img src="./images/project1_sub.png" alt="main img">
+            <div class="img_box_text">
+                <h1>hellinox</h1>
+                <ul class="flex">
+                    <li>#figma</li>
+                    <li>#HTML5</li>
+                    <li>#CSS3</li>
+                    <li>리뉴얼</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="goal flex">
+        <h3>goal</h3>
+        <ol>
+            <li>리뉴얼 사이트의 문제점 파악</li>
+            <li>Figma 를 이용한 사이트 디자인</li>
+            <li>display: flex 사용</li>
+            <li>Kakao map, Youtube 첨부</li>
+        </ol>
+    </section>
+
+    <section class="style flex">
+        <h3>style</h3>
+        <div class="style_guide">
+            <table>
+                <th>keyword</th>
+                <td>깔끔한, 자연친화, 힐링</td>
+                <tr>
+                    <th>font</th>
+                    <td>h1 ~ h3 에는 Montserrat Bold 서체 사용</td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>한글 문단은 Noto Sans KR 사용</td>
+                </tr>
+                <tr>
+                    <th>style</th>
+                    <td>H1 / Montserrat Black / 70</td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>H3 / Montserrat Black / 40</td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>Subtitle / Montserrat Black / 30</td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>Subtitle / Noto Sanse KR Bold / 20</td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>Paragraph / Noto Sanse KR Light / 18</td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>Paragraph / Noto Sanse KR Light / 13</td>
+                </tr>
+                <tr>
+                    <th>color</th>
+                    <td class="background">#7F5D3D</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section class="publishing flex">
+        <h3>publishing</h3>
+        <ul>
+            <li>header nav 에 position: fixed를 사용하여 웹사이트의 상단에 항상 위치하도록 배치</li>
+            <li>header nav 에 justify-content: space-between을 사용하여 로고, 메뉴, 로그인의 간격 조정</li>
+            <li>display: flex가 사용되는 요소에 class명 flex를 사용하여 필요한 요소에 flex가 적용되도록 작성</li>
+            <li> header main text 에 position: absolute를 사용하여 메인 이미지의 가운데 부분으로 배치</li>
+            <li>정사각형 모양의 요소에 aspect-ratio: 1 을 사용하여 완벽한 정사각형 모양으로 디자인</li>
+            <li><span>변수 var 를 이용하여</span> 보다 정확하고 신속한 코드 작성</li>
+            <li>flex-direction: column, flex-direction: row 를 이용하여 요소의 flex 방향 설정</li>
+            <li>justify-content: center, align-items: center 를 사용하여 텍스트 박스 안의 텍스트가 가운데로 위치하도록 설정</li>
+            <li>youtube 에서 퍼가기를 이용하여, html 파일에 삽입 autoplay=1&mute=1&loop=1 값 입력 자동 재생 되도록 설정</li>
+            <li>카카오맵 지도는 지도를 표시할 div를 생성후, sdk.js?appkey=<span>(발급받은 APP KEY)</span> 를 입력하여 카카오맵 지도 삽입</li>
+        </ul>
+    </section>
+
+    <section class="solution">
+        <h3>solution</h3>
+        <div class="line1 grid">
+            <div class="line1_left">
+                <h4>리뉴얼 전 사이트의 문제점 파악</h4>
+                <ul>
+                    <li>index 페이지에 회사의 설명이나 보여지는 부분이 부족한 점</li>
+                    <li>깔끔한 느낌을 갖고 있지만 더욱 세련된 스타일을 필요로 함</li>
+                </ul>
+            </div>
+            <span class="svg"><svg width="47" height="57" viewBox="0 0 47 57" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line x1="1.93934" y1="55.9393" x2="30.4393" y2="27.4393" stroke="white" stroke-width="3" />
+                    <line x1="1.93934" y1="55.9393" x2="30.4393" y2="27.4393" stroke="black" stroke-width="3" />
+                    <line y1="-1.5" x2="40.3051" y2="-1.5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 3 0)"
+                        stroke="white" stroke-width="3" />
+                    <line y1="-1.5" x2="40.3051" y2="-1.5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 3 0)"
+                        stroke="black" stroke-width="3" />
+                    <line x1="16.537" y1="55.9393" x2="45.037" y2="27.4393" stroke="white" stroke-width="3" />
+                    <line x1="16.537" y1="55.9393" x2="45.037" y2="27.4393" stroke="black" stroke-width="3" />
+                    <line y1="-1.5" x2="40.3051" y2="-1.5"
+                        transform="matrix(0.707107 0.707107 0.707107 -0.707107 17.5977 0)" stroke="white"
+                        stroke-width="3" />
+                    <line y1="-1.5" x2="40.3051" y2="-1.5"
+                        transform="matrix(0.707107 0.707107 0.707107 -0.707107 17.5977 0)" stroke="black"
+                        stroke-width="3" />
+                </svg>
+            </span>
+            <div class="line1_right">
+                <h4>리뉴얼 전 사이트의 문제점 해결</h4>
+                <ul>
+                    <li>index 페이지에 회사소개 영상과, 제품설명, 제품 사용 이미지 추가</li>
+                    <li>격자 형식의 이미지를 삽입하여 세련되고 정돈된 느낌을 강조</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="line2 grid">
+            <div class="line2_left">
+                <h4>리뉴얼을 진행하며 생긴 문제점</h4>
+                <p>사이트의 유튜브 하단에 메인 이미지가 모여있는 섹션에서 이미지가 많이
+                    들어가다 보니, 계획한 디자인과 다르게 서로 어긋나게 배치가 됨.</p>
+                <p>유튜브 영상을 추가 후 autoplay=1 값을 입력하였지만 자동재생이 안되
+                    는 문제가 발생하였다.</p>
+            </div>
+            <span class="svg"><svg width="47" height="57" viewBox="0 0 47 57" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line x1="1.93934" y1="55.9393" x2="30.4393" y2="27.4393" stroke="white" stroke-width="3" />
+                    <line x1="1.93934" y1="55.9393" x2="30.4393" y2="27.4393" stroke="black" stroke-width="3" />
+                    <line y1="-1.5" x2="40.3051" y2="-1.5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 3 0)"
+                        stroke="white" stroke-width="3" />
+                    <line y1="-1.5" x2="40.3051" y2="-1.5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 3 0)"
+                        stroke="black" stroke-width="3" />
+                    <line x1="16.537" y1="55.9393" x2="45.037" y2="27.4393" stroke="white" stroke-width="3" />
+                    <line x1="16.537" y1="55.9393" x2="45.037" y2="27.4393" stroke="black" stroke-width="3" />
+                    <line y1="-1.5" x2="40.3051" y2="-1.5"
+                        transform="matrix(0.707107 0.707107 0.707107 -0.707107 17.5977 0)" stroke="white"
+                        stroke-width="3" />
+                    <line y1="-1.5" x2="40.3051" y2="-1.5"
+                        transform="matrix(0.707107 0.707107 0.707107 -0.707107 17.5977 0)" stroke="black"
+                        stroke-width="3" />
+                </svg>
+            </span>
+            <div class="line2_right">
+                <h4>리뉴얼을 진행하며 생긴 문제점 해결</h4>
+                <ul>
+                    <li>이미지가 어긋나게 배치된 문제점 해결</li>
+                    <li class="box grid">
+                        img {width:750px;} -> img {width: 50%;}
+                    </li>
+                    <li class="sub_li">img 의 width 값을 px이 아닌 50% 값을 입력 후 해결</li>
+                    <li class="li_margin">유튜브 영상 자동재생 문제점 해결</li>
+                    <li class="box2 box grid">
+                        <span>&lt;src="controls=0&autoplay=1&loop=1"&gt;</span>
+                        <span>&darr;</span>
+                        <span>&lt;src="controls=0&autoplay=1&mute=1&loop=1"&gt;</span>
+                    </li>
+                    <li class="sub_li">&mute=1 값을 추가 후 해결</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img src="./images/black_logo.png" alt="logo"><br>
+        <a href="https://win401.github.io/openGraph/" target="_blank">🏕️리뉴얼 웹 사이트 바로가기 :
+            <span>https://win401.github.io/openGraph/</span></a>
+    </footer>
+</body>
+
+</html>
