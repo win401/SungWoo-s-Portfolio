@@ -23,8 +23,12 @@
             <li data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
                 UNIVERSAL MUSIC GROUP</li>
         </ul>
-        <a href="#" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
-            data-aos-duration="1000"></a>
+        <div class="ham flex" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+            data-aos-duration="1000">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+        </div>
     </header>
     <section class="top">
         <div class="main_text" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
@@ -102,7 +106,7 @@
         </div>
         <div class="img_box grid">
             <figure data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
-                <img src="images/image1.png" alt="weeknd img">
+                <img onmouseover="img1(this)" onmouseout="img2(this)" src="./images/image1.png" alt="위캔드 이미지" />
                 <figcaption>
                     <h5>The Weeknd</h5>
                     <p>Blinding <span>Lights</span> Snowchild <span>Too Late</span> Heartless</p>
@@ -110,7 +114,7 @@
                 </figcaption>
             </figure data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
             <figure data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
-                <img src="images/image2.png" alt="saay img">
+                <img onmouseover="img3(this)" onmouseout="img4(this)" src="./images/image2.png" alt="세이 이미지" />
                 <figcaption>
                     <h5>SAAY</h5>
                     <p><span>Summer</span> In Love <span>S:Perience</span> Simple way</p>
@@ -118,7 +122,7 @@
                 </figcaption>
             </figure>
             <figure data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
-                <img src="images/image3.png" alt="lamar img">
+                <img onmouseover="img5(this)" onmouseout="img6(this)" src="./images/image3.png" alt="켄드릭 이미지" />
                 <figcaption>
                     <h5>Kendrick Lamar</h5>
                     <p>Mr. Morale <span>We Cry Together</span> Father Time</p>
@@ -126,7 +130,7 @@
                 </figcaption>
             </figure>
             <figure data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
-                <img src="images/image4.png" alt="bieber img">
+                <img onmouseover="img7(this)" onmouseout="img8(this)" src="./images/image4.png" alt="비버 이미지" />
                 <figcaption>
                     <h5>Justin Bieber</h5>
                     <p><span>Unstable</span> Peaches <span>Love You Different</span></p>
@@ -134,7 +138,7 @@
                 </figcaption>
             </figure>
             <figure data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
-                <img src="images/image5.png" alt="post img">
+                <img onmouseover="img9(this)" onmouseout="img10(this)" src="./images/image5.png" alt="포스트 이미지" />
                 <figcaption>
                     <h5>Post Malone</h5>
                     <p>Sign Me Up <span>Don't Understand</span> Novacandy</p>
@@ -142,7 +146,7 @@
                 </figcaption>
             </figure>
             <figure data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
-                <img src="images/image6.png" alt="drake img">
+                <img onmouseover="img11(this)" onmouseout="img12(this)" src="./images/image6.png" alt="drake 이미지" />
                 <figcaption>
                     <h5>Drake</h5>
                     <p><span>Jimmy Cooks</span> Calling My Name <span>Currents</span></p>
@@ -150,7 +154,7 @@
                 </figcaption>
             </figure>
             <figure data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
-                <img src="images/image7.png" alt="ariana img">
+                <img onmouseover="img13(this)" onmouseout="img14(this)" src="./images/image7.png" alt="grande 이미지" />
                 <figcaption>
                     <h5>Ariana Grande</h5>
                     <p>Right There <span>goodnight n go</span> off the table</p>
@@ -158,7 +162,7 @@
                 </figcaption>
             </figure>
             <figure data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
-                <img src="images/image8.png" alt="dean img">
+                <img onmouseover="img15(this)" onmouseout="img16(this)" src="./images/image8.png" alt="dean 이미지" />
                 <figcaption>
                     <h5>Dean</h5>
                     <p><span>what2do</span> D (Half Moon) <span>I Love It</span></p>
@@ -166,7 +170,7 @@
                 </figcaption>
             </figure>
             <figure data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
-                <img src="images/image9.png" alt="sam img">
+                <img onmouseover="img17(this)" onmouseout="img18(this)" src="./images/image9.png" alt="sam 이미지" />
                 <figcaption>
                     <h5>Sam Smith</h5>
                     <p>Who We Love <span>Perfect</span> Dorothy’s Interlude</p>
@@ -201,16 +205,12 @@
                 </svg>
             </a>
 
-            <span>Family Site
-                <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line y1="-1" x2="12.7279" y2="-1" transform="matrix(-0.707107 0.707107 0.707107 0.707107 18 2)"
-                        stroke="white" stroke-width="2" />
-                    <line y1="-1" x2="12.7279" y2="-1" transform="matrix(-0.707107 0.707107 0.707107 0.707107 18 2)"
-                        stroke="white" stroke-width="2" />
-                    <line x1="0.707107" y1="1.29289" x2="9.70711" y2="10.2929" stroke="white" stroke-width="2" />
-                    <line x1="0.707107" y1="1.29289" x2="9.70711" y2="10.2929" stroke="white" stroke-width="2" />
-                </svg>
-            </span>
+            <select>
+                <option value="">Family site</option>
+                <option value="apple">UMG</option>
+                <option value="banana">UMGB</option>
+                <option value="orange">UMK Shop</option>
+            </select>
         </div>
     </section>
     <footer>
