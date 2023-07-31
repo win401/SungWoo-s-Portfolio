@@ -63,7 +63,7 @@ img,
 video {
   height: auto;
   vertical-align: top;
-  /* width: 100%; */
+  width: 100%;
 }
 
 iframe {
