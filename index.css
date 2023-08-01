@@ -426,7 +426,7 @@ header .main_project .project2 {
 
 header .main_project .project3 {
   position: absolute;
-  top: 920px;
+  top: 880px;
   right: 1000px;
   opacity: 0;
   transition: 0.5s;
@@ -435,7 +435,7 @@ header .main_project .project3 {
 
 header .main_project .project4 {
   position: absolute;
-  top: 1400px;
+  top: 1320px;
   right: 1000px;
   opacity: 0;
   transition: 0.5s;
@@ -444,7 +444,7 @@ header .main_project .project4 {
 
 header .main_project .project5 {
   position: absolute;
-  top: 1900px;
+  top: 1760px;
   right: 1000px;
   opacity: 0;
   transition: 0.5s;
@@ -494,7 +494,7 @@ main .main_top svg {
 main .main_text {
   height: 650vh;
   background: linear-gradient(#7d83d1 80%, #111);
-  padding-top: 500px;
+  padding-top: 1000px;
   color: white;
   position: relative;
   z-index: -9;
@@ -547,7 +547,7 @@ main .main_text .gradient img {
 
 main .main_text .main_illust {
   position: absolute;
-  top: 20%;
+  top: 30%;
   z-index: -99;
 }
 
@@ -916,6 +916,10 @@ footer .text_box {
 
 footer .text_box h2 {
   width: 500px;
+}
+
+footer .car {
+  margin-top: 50px;
 }
 
 footer .car img {

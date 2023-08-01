@@ -35,7 +35,7 @@ function updateTime() {
 }
 updateTime();
 
-// project1 헬리녹스 이미지
+// project1 urbanic
 $('.pj1').on('mouseenter', () => {
   $('.project1').addClass('active');
 });
@@ -51,7 +51,7 @@ $('.pj2').on('mouseleave', () => {
   $('.project2').removeClass('active');
 });
 
-// project3 jyp
+// project3 universal
 $('.pj3').on('mouseenter', () => {
   $('.project3').addClass('active');
 });
@@ -59,12 +59,20 @@ $('.pj3').on('mouseleave', () => {
   $('.project3').removeClass('active');
 });
 
-// project4 jyp
+// project4 dining note
 $('.pj4').on('mouseenter', () => {
-  $('.project3').addClass('active');
+  $('.project4').addClass('active');
 });
 $('.pj4').on('mouseleave', () => {
-  $('.project3').removeClass('active');
+  $('.project4').removeClass('active');
+});
+
+// project5 hellinox
+$('.pj5').on('mouseenter', () => {
+  $('.project5').addClass('active');
+});
+$('.pj5').on('mouseleave', () => {
+  $('.project5').removeClass('active');
 });
 
 // to top btn
