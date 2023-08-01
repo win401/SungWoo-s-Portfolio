@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="../common/style/minireset.min.css">
     <link rel="stylesheet" href="../common/style/aos@3.0.0-beta.6_dist_aos.css">
+    <link rel="stylesheet" href="../common/style/swiper-bundle.min.css">
     <link rel="stylesheet" href="./project3.css">
     <title>project3</title>
     <script src="../common/style/aos@3.0.0-beta.6_dist_aos.js"></script>
     <script src="../common/style/jquery-3.7.0.min.js"></script>
+    <script src="../common/style/swiper-bundle.min.js"></script>
     <script defer src="./project3.js"></script>
 </head>
 
@@ -34,11 +36,26 @@
         <div class="main_text" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
             data-aos-duration="1000">
             <h1><span>new</span>post malone</h1>
-            <h1>austin<span>2023.7.15</span></h1>
+            <h1>austin<span>2023. 7. 15</span></h1>
         </div>
         <div class="main_icon flex">
-            <span data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
-                data-aos-duration="1000"><img src="./images/lines.png" alt="left lines img"></span>
+            <div class="container" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                data-aos-duration="1000">
+                <div class="area">
+                    <div class="rect1 item"></div>
+                    <div class="rect2 item"></div>
+                    <div class="rect3 item"></div>
+                    <div class="rect4 item"></div>
+                    <div class="rect5 item"></div>
+                    <div class="rect6 item"></div>
+                    <div class="rect7 item"></div>
+                    <div class="rect8 item"></div>
+                    <div class="rect9 item"></div>
+                    <div class="rect10 item"></div>
+                    <!--<div class="rect11 item"></div>
+                     <div class="rect12 item"></div> -->
+                </div>
+            </div>
             <ul class="flex" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
                 data-aos-duration="1000">
                 <li><img src="images/icon1.png" alt="icon"></li>
@@ -55,8 +72,8 @@
     <section class="middle">
         <div class="sns flex pt_sans" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
             data-aos-duration="3000">
-            <a href="#" class="pt_sans">instagram</a>
-            <a href="#" class="pt_sans">facebook</a>
+            <a href="https://www.instagram.com/universalmusickorea/" target="_blank" class="pt_sans">instagram</a>
+            <a href="https://ko-kr.facebook.com/universalmusickorea/" target="_blank" class="pt_sans">facebook</a>
         </div>
         <div class="animated-title1">
             <div class="track">
@@ -66,9 +83,47 @@
                     &nbsp;Universal Music Club</div>
             </div>
         </div>
-        <div class="main_images" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine"
-            data-aos-duration="1000">
-            <img src="./images/main_images.png" alt="eminem img">
+
+        <div class="swiper mySwiper" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine"
+            data-aos-duration="3000">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/artist1.png" alt="Kendrick Lamar img">
+                    <p>Kendrick Lamar</p>
+                </div>
+                <div class="swiper-slide"><img src="./images/artist2.png" alt="DJ Khalid img">
+                    <p>DJ Khalid</p>
+                </div>
+                <div class="swiper-slide"><img src="./images/artist3.png" alt="Bob Marley img">
+                    <p>Bob Marley</p>
+                </div>
+                <div class="swiper-slide"><img src="./images/artist4.png" alt="beatles img">
+                    <p>beatles</p>
+                </div>
+                <div class="swiper-slide"><img src="./images/artist5.png" alt="post malone img">
+                    <p>post malone</p>
+                </div>
+                <div class="swiper-slide"><img src="./images/artist6.png" alt="drake img">
+                    <p>drake</p>
+                </div>
+                <div class="swiper-slide"><img src="./images/artist7.png" alt="eminem img">
+                    <p>eminem</p>
+                </div>
+                <div class="swiper-slide"><img src="./images/artist8.png" alt="Chris Stapleton img">
+                    <p>Chris Stapleton</p>
+                </div>
+                <div class="swiper-slide"><img src="./images/artist9.png" alt="black pink img">
+                    <p>black pink</p>
+                </div>
+                <div class="swiper-slide"><img src="./images/artist10.png" alt="billie eilish img">
+                    <p>billie eilish</p>
+                </div>
+                <div class="swiper-slide"><img src="./images/artist11.png" alt="badshah img">
+                    <p>badshah</p>
+                </div>
+            </div>
+            <div class="swiper-button-next btn"></div>
+            <div class="swiper-button-prev btn"></div>
+            <div class="swiper-pagination"></div>
         </div>
         <p class="pt_sans">© Copyright 2021 Universal Music Group N.V. All rights reserved.</p>
 
@@ -178,8 +233,8 @@
                 </figcaption>
             </figure>
         </div>
-        <a href="#" class="btn" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine"
-            data-aos-duration="1000">view more artist</a>
+        <a href="http://www.universalmusic.co.kr/artist_list" target="_blank" class="btn" data-aos="fade-up"
+            data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">view more artist</a>
     </section>
 
     <section class="bottom flex">

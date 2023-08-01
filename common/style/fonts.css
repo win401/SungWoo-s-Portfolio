@@ -33,6 +33,9 @@ font-family: 'Noto Sans KR', sans-serif;
 /* font-family: 'Gentium Book Plus', serif; */
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&display=swap');
 
+/* font-family: 'Cinzel', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+
 @font-face {
   font-family: 'Pretendard Variable';
   font-weight: 45 920;

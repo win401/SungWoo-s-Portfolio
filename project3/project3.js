@@ -25,7 +25,16 @@ document.addEventListener('mousemove', (e) => {
     }
   );
 
-  $('img').hover(
+  // $('img').hover(
+  //   function () {
+  //     $(cursor).addClass('active');
+  //   },
+  //   function () {
+  //     $(cursor).removeClass('active');
+  //   }
+  // );
+
+  $('.ham').hover(
     function () {
       $(cursor).addClass('active');
     },
@@ -34,7 +43,7 @@ document.addEventListener('mousemove', (e) => {
     }
   );
 
-  $('.ham').hover(
+  $('.btn').hover(
     function () {
       $(cursor).addClass('active');
     },
@@ -128,4 +137,29 @@ function img18(sam) {
 // 햄버거메뉴바
 $('.ham').click(function () {
   $(this).toggleClass('active');
+});
+
+// swiper
+var swiper = new Swiper('.mySwiper', {
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+  },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+// header 메뉴바 스크롤시 height 작아짐
+$(window).on('scroll', function () {
+  if ($(window).scrollTop()) {
+    $('header').addClass('scroll');
+  } else {
+    $('header').removeClass('scroll');
+  }
 });
