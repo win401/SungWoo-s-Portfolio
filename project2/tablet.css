@@ -95,6 +95,10 @@ main .gallery figure {
   margin: 0;
 }
 
+main .gallery a {
+  display: none;
+}
+
 /* /gallery */
 
 /*************** flower **************/
@@ -199,7 +203,6 @@ main .news .right_text {
 /* /news */
 
 /************** location ************/
-
 
 main .location .textbox {
   height: 70vh;

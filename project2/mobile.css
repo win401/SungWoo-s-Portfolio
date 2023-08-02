@@ -7,29 +7,29 @@ html {
 }
 
 body {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 h1 {
   font-size: 3.75rem;
   position: relative;
   text-transform: capitalize;
-  font-family: "Cormorant Garamond", serif;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 h3 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 h5 {
   font-size: 30px;
   text-transform: uppercase;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.313rem;
 }
 
@@ -38,7 +38,7 @@ header h4 {
 }
 
 .material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
 }
 
 header .header_menu h4 {
@@ -132,7 +132,7 @@ header .header_menu a svg {
 }
 
 header .main-text h1::after {
-  content: "";
+  content: '';
   height: 99px;
   width: 1px;
   background-color: white;
@@ -147,7 +147,7 @@ header .main-text h3 {
 }
 
 header .main-text h3::after {
-  content: "";
+  content: '';
   height: 99px;
   width: 1px;
   background-color: white;
@@ -222,7 +222,7 @@ main .gallery figcaption {
   right: 5px;
   color: white;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 main .gallery .black {
@@ -232,7 +232,7 @@ main .gallery .black {
 
 main .gallery figcaption span {
   display: block;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 main .gallery .line1_img .main1_img {
@@ -264,6 +264,10 @@ main .gallery .line2_img figure:nth-child(1) {
 main .gallery .line2_img figure:nth-child(1) img {
   /* height: 100%;
   object-fit: cover; */
+}
+
+main .gallery a {
+  display: none;
 }
 
 /* /gallery */
@@ -345,7 +349,7 @@ main .history ul {
 }
 
 main .history p {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 0.875rem;
 }
@@ -362,7 +366,7 @@ main .history ul li {
 
 main .history figure figcaption h6,
 main .history figure figcaption p {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-weight: 400;
 }
 
@@ -392,7 +396,7 @@ main .history ul li .in {
 }
 
 main .history ul li::before {
-  content: "";
+  content: '';
   width: 100%;
   height: 1px;
   background-color: black;
@@ -540,7 +544,7 @@ main .news .right_text ul {
 /***************** location ***************/
 
 main .location .textbox h6 {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 main .location .textbox {
