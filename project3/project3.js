@@ -11,8 +11,10 @@ document.addEventListener('mousemove', (e) => {
   cursor.style.left = mouseX + 'px';
   cursor.style.top = mouseY + 'px';
 
-  console.log(mouseX);
-  console.log(mouseY);
+  (function repeatOften() {
+    // 애니메이션 실행 코드
+    requestAnimationFrame(repeatOften);
+  })();
 
   // mouse event
 
@@ -137,6 +139,12 @@ function img18(sam) {
 // 햄버거메뉴바
 $('.ham').click(function () {
   $(this).toggleClass('active');
+});
+
+// 햄버거 메뉴 클릭시 메뉴 slide down
+$('.ham').click(function () {
+  $('.menu_box').addClass('opacity', 1000);
+  $('.menu_box').toggle('blind', 500);
 });
 
 // swiper

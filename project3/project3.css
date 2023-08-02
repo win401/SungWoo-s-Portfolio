@@ -98,6 +98,32 @@ header ul {
   transform: rotate(135deg);
 }
 
+header .menu_box {
+  position: absolute;
+  bottom: -330px;
+  right: 0;
+  display: none;
+  color: black;
+  font-family: 'Universal Serif', 'Cinzel', 'Gentium Book Plus';
+  color: #fff;
+  line-height: 3;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  white-space: nowrap;
+}
+
+header .menu_box.opacity {
+  display: block;
+}
+
+header .menu_box li:hover {
+  transition: 0.3s;
+}
+
+header .menu_box li:hover {
+  color: #10b3e2;
+}
+
 /* top */
 
 .top {
@@ -109,8 +135,9 @@ header ul {
 
 .top .main_text {
   position: absolute;
-  top: 20%;
-  left: 3%;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .top .main_text h1 {
@@ -466,10 +493,11 @@ header ul {
   gap: 20px;
 }
 
-.bottom .left_box p {
+.bottom p {
   font-size: 1.563rem;
+  font-family: 'Universal Serif', 'Cinzel', 'Gentium Book Plus';
 }
-.bottom .left_box p a {
+.bottom p a {
   text-decoration: underline;
 }
 .bottom .left_box img {
