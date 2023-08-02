@@ -1,48 +1,5 @@
 AOS.init();
 
-// 원형 따라다니는 cursor
-
-const circle = document.querySelector('.circle');
-
-document.addEventListener('mousemove', (e) => {
-  const mouseX = e.clientX;
-  const mouseY = e.clientY;
-
-  circle.style.left = mouseX + 'px';
-  circle.style.top = mouseY + 'px';
-  requestAnimationFrame();
-
-  // mouse event
-
-  $('a').hover(
-    function () {
-      $(circle).addClass('active');
-    },
-    function () {
-      $(circle).removeClass('active');
-    }
-  );
-
-  // hover
-  $('.ham').hover(
-    function () {
-      $(circle).addClass('active');
-    },
-    function () {
-      $(circle).removeClass('active');
-    }
-  );
-
-  $('.btn').hover(
-    function () {
-      $(circle).addClass('active');
-    },
-    function () {
-      $(circle).removeClass('active');
-    }
-  );
-});
-
 // 위캔드
 function img1(Weeknd) {
   Weeknd.setAttribute('src', './images/image1-2.png');
@@ -158,4 +115,75 @@ $(window).on('scroll', function () {
   } else {
     $('header').removeClass('scroll');
   }
+});
+
+const emoji = document.querySelector('.emoji');
+
+// 마우스 좌표
+let mouseX = 0;
+let mouseY = 0;
+
+// 커서를 따라다니는 이모지 좌표
+let emojiX = 0;
+let emojiY = 0;
+
+// 마우스 이동시 이모지 이동
+const mouseMove = (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+};
+document.addEventListener('mousemove', mouseMove);
+
+// 따라다니는 이모지
+const aniEmoji = () => {
+  emojiX += (mouseX - emojiX) * 0.1;
+  emojiY += (mouseY - emojiY) * 0.1;
+  // console.log(emojiX, emojiY);
+
+  emoji.style.transform = `translate(${emojiX}px, ${emojiY}px)`;
+
+  requestAnimationFrame(aniEmoji); // 연속 호출이 필요
+};
+
+aniEmoji();
+
+// hover .active
+
+document.addEventListener('mousemove', (e) => {
+  $('a').hover(
+    function () {
+      $(emoji).addClass('active');
+    },
+    function () {
+      $(emoji).removeClass('active');
+    }
+  );
+
+  // hover
+  $('.ham').hover(
+    function () {
+      $(emoji).addClass('active');
+    },
+    function () {
+      $(emoji).removeClass('active');
+    }
+  );
+
+  $('.btn').hover(
+    function () {
+      $(emoji).addClass('active');
+    },
+    function () {
+      $(emoji).removeClass('active');
+    }
+  );
+
+  $('figure').hover(
+    function () {
+      $(emoji).addClass('active');
+    },
+    function () {
+      $(emoji).removeClass('active');
+    }
+  );
 });

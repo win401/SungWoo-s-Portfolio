@@ -13,6 +13,10 @@ h1 {
   font-family: 'Universal Serif', 'Cinzel', 'Gentium Book Plus';
 }
 
+a {
+  cursor: none;
+}
+
 .flex {
   display: flex;
 }
@@ -564,7 +568,7 @@ a:hover {
   position: fixed;
   top: 0;
   left: 0;
-  width: 10px;
+  width: 80px;
   aspect-ratio: 1;
   background-color: #fff;
   border-radius: 50%;
@@ -572,6 +576,22 @@ a:hover {
   transition: 0.3s;
 }
 
-.circle.active {
+.emoji.active {
   width: 30px;
+}
+
+.emoji {
+  position: fixed;
+  top: 10px;
+  left: 10x;
+  font-size: 3rem;
+  background-color: #fff;
+  width: 10px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 90px;
+  z-index: 999;
+  /* transform을 사용할테니 브라우저는 준비하고 있어라 */
+  will-change: transform;
 }
