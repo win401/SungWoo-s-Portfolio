@@ -560,7 +560,7 @@ a:hover {
   cursor: none;
 }
 
-.cursor {
+.circle {
   position: fixed;
   top: 0;
   left: 0;
@@ -572,6 +572,6 @@ a:hover {
   transition: 0.3s;
 }
 
-.cursor.active {
+.circle.active {
   width: 30px;
 }

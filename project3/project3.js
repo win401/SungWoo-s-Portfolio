@@ -2,55 +2,43 @@ AOS.init();
 
 // 원형 따라다니는 cursor
 
-const cursor = document.querySelector('.cursor');
+const circle = document.querySelector('.circle');
 
 document.addEventListener('mousemove', (e) => {
   const mouseX = e.clientX;
   const mouseY = e.clientY;
 
-  cursor.style.left = mouseX + 'px';
-  cursor.style.top = mouseY + 'px';
-
-  (function repeatOften() {
-    // 애니메이션 실행 코드
-    requestAnimationFrame(repeatOften);
-  })();
+  circle.style.left = mouseX + 'px';
+  circle.style.top = mouseY + 'px';
+  requestAnimationFrame();
 
   // mouse event
 
   $('a').hover(
     function () {
-      $(cursor).addClass('active');
+      $(circle).addClass('active');
     },
     function () {
-      $(cursor).removeClass('active');
+      $(circle).removeClass('active');
     }
   );
 
-  // $('img').hover(
-  //   function () {
-  //     $(cursor).addClass('active');
-  //   },
-  //   function () {
-  //     $(cursor).removeClass('active');
-  //   }
-  // );
-
+  // hover
   $('.ham').hover(
     function () {
-      $(cursor).addClass('active');
+      $(circle).addClass('active');
     },
     function () {
-      $(cursor).removeClass('active');
+      $(circle).removeClass('active');
     }
   );
 
   $('.btn').hover(
     function () {
-      $(cursor).addClass('active');
+      $(circle).addClass('active');
     },
     function () {
-      $(cursor).removeClass('active');
+      $(circle).removeClass('active');
     }
   );
 });
