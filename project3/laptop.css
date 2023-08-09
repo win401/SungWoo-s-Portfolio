@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+.animated-title1 {
+    height: 60vh;
+}
+
+.animated-title {
+    height: 95vh;
+}
+
+.main .img_box {
+    column-gap: 30px;
+}
+
+.top .main_text {
+    left: 40%;
+}

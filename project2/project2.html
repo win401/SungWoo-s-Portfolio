@@ -2,212 +2,395 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>project2</title>
-    <link rel="stylesheet" href="../common/style/minireset.min.css">
-    <link rel="stylesheet" href="./project2.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <meta property="og:title" content="Hallim Park">
+  <meta property="og:description" content="제주 한림파크 홈페이지 입니다.">
+  <meta property="og:image" content="https://win401.github.io/SungWoo-s-Portfolio/project1/images/og.jpg">
+  <meta property="og:url" content="https://win401.github.io/SungWoo-s-Portfolio/project1/project1.html">
+  <title>hallimpark</title>
+
+  <!-- minireset -->
+  <link rel="stylesheet" href="../common/style/minireset.min.css">
+
+  <!-- fonts -->
+  <link rel="stylesheet" href="../common/style/fonts.css">
+
+  <!-- media -->
+  <link rel="stylesheet" href="./mobile.css">
+  <link rel="stylesheet" href="./tablet.css" media="(min-width:768px)">
+  <link rel="stylesheet" href="./pc.css" media="(min-width:1200px)">
+
 </head>
 
 <body>
-    <header>
-        <div class="go_back flex">
-            <a href="https://win401.github.io/SungWoo-s-Portfolio/">
-                <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
-                    <path d="M398.077-253.847 171.924-480l226.768-226.768 32.615 31.614-172.462
-                 172.462h529.846v45.384H258.845l171.846 171.846-32.614 31.615Z" />
-                </svg><a href="https://win401.github.io/SungWoo-s-Portfolio/">portfolio</a>
+  <header>
+    <div class="header_menu">
+      <h4>hallimpark</h4>
+      <div class="menubar">
+        <menu class="sub_menu">
+          <li><a href="">한림공원 소개</a></li>
+          <li><a href="">테마9</a></li>
+          <li><a href="">365꽃세상</a></li>
+          <li><a href="">즐길거리</a></li>
+          <li><a href="">공원소식</a></li>
+        </menu>
+        <div class="login">
+          <p><a href="#">login</a> | <a href="#">회원가입</a></p>
         </div>
-        <h2>project2 : hallim park<span>반응형 웹사이트</span></h2>
-        <div class="img_box flex">
-            <img src="../images/project2.png" alt="main img">
-            <div class="img_box_text">
-                <h1>hallim</h1>
-                <ul class="flex">
-                    <li>#반응형</li>
-                    <li>#HTML5</li>
-                    <li>#CSS3</li>
-                    <li>#figma</li>
-                </ul>
-            </div>
+      </div>
+      <a href="#" class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+          <path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+        </svg></a>
+    </div>
+    <div class="main-text">
+      <h3>jeju's nature-friendly park</h3>
+      <h1>hallimpark</h1>
+    </div>
+  </header>
+
+  <main>
+
+    <!--------------- introduce ---------------->
+    <div class="introduce">
+      <h1 class="green_text">Introduce<span> hallimpark</span></h1>
+      <div class="sub_text">
+        <h6>Jeju's Nature-Friendly Park</h6>
+        <p>제주 한림공원은 1971년 창업인 송봉규 선생이 10만여평의 황무지 모래밭에 야자수 씨앗을 파종하여 녹색의 낙원으로 만든 개척정신이 살아있는 현장입니다. </p>
+        <p>환상적인 9가지 다양한 테마가 펼쳐지는 한림공원은 장쩌민 중국 전 국가주석과 나까소네 전 일본수상을 비롯한 세계 각국의 저명인사들이 방문한 곳으로, 국내외 관광객이 찾는 세계적인 관광명소 입니다.
+        </p>
+      </div>
+      <img src="./images/Hallim.png" alt="한림줄무늬 텍스트 이미지">
+    </div>
+
+    <!------------------ gallery -------------------->
+
+    <h5>gallery</h5>
+
+    <div class="gallery">
+      <div class="line1_img">
+        <figure class="main1_img">
+          <img src="./images/gallery1.png" alt="돌하르방 이미지">
+          <a href="#">more<br><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+              <path d="m375-240-43-43 198-198-198-198 43-43 241 241-241 241Z" />
+            </svg></a>
+          <figcaption>
+            <p>theme:6<span>재암민속마을</span></p>
+          </figcaption>
+        </figure>
+        <div class="small_img">
+          <figure class="long_img">
+            <img src="./images/gallery2.png" alt="공작 이미지">
+            <a href="#">more<br><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+                <path d="m375-240-43-43 198-198-198-198 43-43 241 241-241 241Z" />
+              </svg></a>
+            <figcaption>
+              <p>theme:7<span>사파리조류관</span></p>
+            </figcaption>
+          </figure>
+          <figure class="long_img">
+            <img src="./images/gallery3.png" alt="야자수길 이미지">
+            <a href="#">more<br><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+                <path d="m375-240-43-43 198-198-198-198 43-43 241 241-241 241Z" />
+              </svg></a>
+            <figcaption>
+              <p>theme:2<span>야자수길</span></p>
+            </figcaption>
+          </figure>
         </div>
-    </header>
-
-    <section class="goal flex">
-        <h3>goal</h3>
-        <ol>
-            <li>리뉴얼 사이트의 문제점 파악</li>
-            <li>Figma 를 이용한 사이트 디자인</li>
-            <li>display: grid 사용</li>
-            <li>media query를 이용한 반응형 웹사이트 제작</li>
-        </ol>
-    </section>
-
-    <section class="style flex">
-        <h3>style</h3>
-        <div class="style_guide">
-            <table>
-                <th>keyword</th>
-                <td>푸릇한, 자연친화적인, 청량한</td>
-                <tr>
-                    <th>font</th>
-                    <td>Cormorant Garamond를 사용하여 자연친화적인 감성 강조</td>
-                </tr>
-                <tr>
-                    <th></th>
-                    <td>Noto Sans KR 는 가독성과 깔끔한 디자인을 위하여 사용</td>
-                </tr>
-                <tr>
-                    <th></th>
-                    <td>Montserrat 제목을 한눈에 표시하기 위함</td>
-                </tr>
-                <tr>
-                    <th>style</th>
-                    <td>H1 / Cormorant Garamond / 100 </td>
-                </tr>
-                <tr>
-                    <th></th>
-                    <td>H2 / Cormorant Garamond / 70 </td>
-                </tr>
-                <tr>
-                    <th></th>
-                    <td>H3 / Cormorant Garamond / 60 </td>
-                </tr>
-                <tr>
-                    <th></th>
-                    <td>H4 / Montserrat / 21</td>
-                </tr>
-                <tr>
-                    <th></th>
-                    <td>H4 / Montserrat / 20</td>
-                </tr>
-                <tr>
-                    <th></th>
-                    <td>p / Noto Sans KR / 16</td>
-                </tr>
-                <tr>
-                    <th></th>
-                    <td>p / Noto Sans KR / 14</td>
-                </tr>
-                <tr>
-                    <th>color</th>
-                    <td class="background1">#6F914B</td>
-                </tr>
-                <tr>
-                    <th></th>
-                    <td class="background2">#879A82</td>
-                </tr>
-                <tr>
-                    <th></th>
-                    <td class="background3">#222222</td>
-                </tr>
-            </table>
+        <div class="text_box">
+          <h5>Hallimpark's 9 Theme</h5>
+          <p>민속마을부터 동굴까지~ 10만평 대지위에 펼쳐지는다양한
+            아홉가지 테마를 즐겨보세요!
+          </p>
         </div>
-    </section>
+      </div>
 
-    <section class="publishing flex">
-        <h3>publishing</h3>
+      <div class="line2_img">
+        <figure class="main2_img">
+          <img src="./images/gallery4.png" alt="겨울야자수길 이미지">
+          <a href="#">more<br><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+              <path d="m375-240-43-43 198-198-198-198 43-43 241 241-241 241Z" />
+            </svg></a>
+          <figcaption class="black">
+            <p>theme:2<span>겨울야자수길</span></p>
+          </figcaption>
+        </figure>
+        <div class="small_img">
+          <figure class="long_img">
+            <img src="./images/gallery5.png" alt="협재,쌍용굴 이미지">
+            <a href="#">more<br><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+                <path d="m375-240-43-43 198-198-198-198 43-43 241 241-241 241Z" />
+              </svg></a>
+            <figcaption>
+              <p>theme:4<span>협재굴/쌍용굴</span></p>
+            </figcaption>
+          </figure>
+          <figure class="long_img">
+            <img src="./images/gallery6.png" alt="산야초원 이미지">
+            <a href="#">more<br><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+                <path d="m375-240-43-43 198-198-198-198 43-43 241 241-241 241Z" />
+              </svg></a>
+            <figcaption>
+              <p>theme:3<span>가을산야초원</span></p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <!-------------- /gallery ----------------->
+
+    <!------------- flower -------------------->
+    <div class="flower">
+      <h5>hallimpark's flower</h5>
+      <h1>seasonal flowers<span class="text">hallimpark</span></h1>
+      <div class="gallery_flex">
+        <div class="gallery_text">
+          <p>6월 여름의 문턱, 한림공원 수국 동산에 수국 꽃들이 시원시원하게 만발했습니다.</p>
+          <span class="btn"><a href="#">수국 갤러리<svg xmlns="http://www.w3.org/2000/svg" height="48"
+                viewBox="0 -960 960 960" width="48">
+                <path d="m702-301-43-42 106-106H120v-60h646L660-615l42-42 178 178-178 178Z" />
+              </svg></a></span>
+        </div>
+        <div class="flower_img grid">
+          <img src="./images/flower1.png" alt="연꽃 이미지">
+          <img src="./images/flower2.png" alt="들꽃 이미지">
+          <img src="./images/flower3.png" alt="핑크뮬리 이미지">
+          <img src="./images/flower4.png" alt="벚꽃 이미지">
+        </div>
+      </div>
+    </div>
+    <!---------------- /flowers ----------------->
+
+    <!---------------- history ---------------->
+    <div class="history">
+      <h5>history</h5>
+      <ul>
+        <li>
+          <span class="out"><span class="in"></span></span>
+          <p class="year">1970</p>
+          <figure>
+            <img src="./images/history1.png" alt="개발의지 이미지">
+            <figcaption>
+              <h6>지역사회 개발 의지</h6>
+              <p>한림공원의 송봉규 회장은 제주도의 발전은 관광 산업이 열쇠라는 확신을 가지게 되었다.</p>
+            </figcaption>
+          </figure>
+
+        </li>
+        <li>
+          <span class="out"><span class="in"></span></span>
+          <p class="year">1982</p>
+          <figure>
+            <img src="./images/history2.png" alt="놀이동산 이미지">
+            <figcaption>
+              <h6>조성 사업 허가</h6>
+              <p>송봉규 회장은 1982년 한림도시공원 조성사업의 허가를 받았다.</p>
+            </figcaption>
+          </figure>
+
+        </li>
+        <li>
+          <span class="out"><span class="in"></span></span>
+          <p class="year">1996</p>
+          <figure>
+            <img src="./images/history3.png" alt="수석관 이미지">
+            <figcaption>
+              <h6>재암수석관 개관</h6>
+              <p>1991년도 수석, 광석, 화석을 수집하여 송봉규 회장은 재암수석관을개관(1996년)하였다.</p>
+            </figcaption>
+          </figure>
+
+        </li>
+        <li>
+          <span class="out"><span class="in"></span></span>
+          <p class="year">2010</p>
+          <figure>
+            <img src="./images/history4.png" alt="새정원 이미지">
+            <figcaption>
+              <h6>새 정원 개장</h6>
+              <p>놀이공원 시설을 새가 있는 정원으로 새로 단장하여 2000년 1월에 개장하게 되었다.</p>
+            </figcaption>
+          </figure>
+
+        </li>
+      </ul>
+    </div>
+
+    <!---------------- /history --------------->
+
+    <!------------ contents --------------->
+
+    <h5>contents</h5>
+    <div class="contents">
+      <figure>
+        <img src="./images/contents1.png" alt="야자수카페 이미지">
+        <figcaption>야자수카페</figcaption>
+      </figure>
+      <figure class="hidden">
+        <img src="./images/contents2.png" alt="앵무새먹이체험 이미지">
+        <figcaption>앵무새먹이체험</figcaption>
+      </figure>
+      <figure class="hidden">
+        <img src="./images/contents3.png" alt="다화원휴게소 이미지">
+        <figcaption>다화원휴게소</figcaption>
+      </figure>
+    </div>
+    <!------------- /contents -------------->
+
+    <!--------------- news -------------->
+
+    <div class="news">
+      <div class="left_text">
+        <h6>한림공원의 다양한 소식</h6>
+        <div class="ul_flex">
+          <ul>
+            <li><a href=""></a>'정열의 꽃! 부겐빌레아' 2023년 부겐빌레아 축제 개최</li>
+            <li><a href=""></a>한국청소년육성회 대표단 방문 (2023. 5. 24)</li>
+            <li><a href=""></a>제12차 재일제주인 돕기 특별모금 기부 언론보도(제민일보,헤드라인제주 2023. 5. 10)</li>
+            <li><a href=""></a>의인 김만덕 나눔 정신 확산 동참(제민일보 2023. 4. 25)</li>
+            <li><a href=""></a>송산섭 한림공원 대표, 외교부장관 표창(제민일보 2023. 4 .13)</li>
+            <li><a href=""></a>한림공원, 튤림축제 언론보도(제주의 소리, 제주일보, 연합뉴스, 한라일보)</li>
+            <li><a href=""></a>more</li>
+          </ul>
+          <ul>
+            <li>2일전</li>
+            <li>2023-05-24</li>
+            <li>2023-05-13</li>
+            <li>2023-05-07</li>
+            <li>2023-05-07</li>
+            <li>2023-05-07</li>
+          </ul>
+        </div>
+      </div>
+      <div class="right_text">
+        <h6>한림공원 이용안내</h6>
+        <table>
+          <thead>
+            <tr>
+              <th>시기</th>
+              <th>매표 개시</th>
+              <th>매표 마감</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>3월 ~ 5월</td>
+              <td>09:00</td>
+              <td>17:30</td>
+            </tr>
+            <tr>
+              <td>6월 ~ 8월</td>
+              <td>09:00</td>
+              <td>18:00</td>
+            </tr>
+            <tr>
+              <td>9월 ~ 10월</td>
+              <td>09:00</td>
+              <td>17:30</td>
+            </tr>
+            <tr>
+              <td>11월 ~ 2월</td>
+              <td>09:00</td>
+              <td>16:30</td>
+            </tr>
+          </tbody>
+        </table>
         <ul>
-            <li><span>media="(min-width:768px),(min-width:1200px)" 값을 적용하여 모바일, 테블릿, pc버전 모두 적응 가능</span></li>
-            <li>main 이미지 h1에 animation 값을 적용하여 보다 동적인 메인 화면 구성</li>
-            <li>header h1::after 를 이용한 실선 디자인 요소 제작</li>
-            <li>header nav 에 justify-content: space-between을 사용하여 로고, 메뉴, 로그인의 간격 조정</li>
-            <li>display: flex가 사용되는 요소에 class명 flex를 사용하여 필요한 요소에 flex가 적용되도록 작성</li>
-            <li>모바일 버전에서의 필요없는 요소는 display: none 을 적용하여 보다 깔끔하고 간결한 화면 제작</li>
-            <li>visibility: visible, visibillity: none 을 사용하여 display: none 의 특성인 요소가 사라지는 것이 아닌 숨김만을 필요로 하는 곳에 적용</li>
-            <li>news 섹션에서 모바일 버전은 text-overflow: ellipsis 사용하여 사용자에게 문장이 더 길다는 것을 인지 시켜줌</li>
-            <li>display: grid 와 gap: 을 적용하여 깔끔하고 스타일리쉬한 이미지 배치</li>
-            <li>grid-template-columns: repeat(3, 1fr) 을 적용하여 간결한 코드 작성 방식</li>
-            <li>main .history figure h6 요소에 white-space: nowrap 을 적용하여 텍스트의 줄바꿈을 방지</li>
-            <li>카카오맵 지도는 div 생성후, sdk.js?appkey=(발급받은 APP KEY) 를 입력하여 카카오맵 지도 삽입</li>
+          <li>연중무휴</li>
+          <li>관람 소요 시간 : 약 1시간 30분</li>
+          <li>주차 : 무료</li>
+          <li>애견입장 : 7kg미만 소형견, 배변 봉투 지참, 목줄 착용 시 입장 가능</li>
         </ul>
-    </section>
+      </div>
+    </div>
 
-    <section class="solution">
-        <h3>solution</h3>
-        <div class="line1 grid">
-            <div class="line1_left">
-                <h4>리뉴얼 전 사이트의 문제점 파악</h4>
-                <ul>
-                    <li>사이트의 디자인이 다소 딱딱하고, 한림공원의 자연친화적인 느낌이 부족함</li>
-                    <li>포인트로 정해진 컬러가 없으며, 사용자의 흥미를 유발 할 수 있는 요소가 부족함</li>
-                </ul>
-            </div>
-            <span class="svg"><svg width="47" height="57" viewBox="0 0 47 57" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <line x1="1.93934" y1="55.9393" x2="30.4393" y2="27.4393" stroke="white" stroke-width="3" />
-                    <line x1="1.93934" y1="55.9393" x2="30.4393" y2="27.4393" stroke="black" stroke-width="3" />
-                    <line y1="-1.5" x2="40.3051" y2="-1.5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 3 0)"
-                        stroke="white" stroke-width="3" />
-                    <line y1="-1.5" x2="40.3051" y2="-1.5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 3 0)"
-                        stroke="black" stroke-width="3" />
-                    <line x1="16.537" y1="55.9393" x2="45.037" y2="27.4393" stroke="white" stroke-width="3" />
-                    <line x1="16.537" y1="55.9393" x2="45.037" y2="27.4393" stroke="black" stroke-width="3" />
-                    <line y1="-1.5" x2="40.3051" y2="-1.5"
-                        transform="matrix(0.707107 0.707107 0.707107 -0.707107 17.5977 0)" stroke="white"
-                        stroke-width="3" />
-                    <line y1="-1.5" x2="40.3051" y2="-1.5"
-                        transform="matrix(0.707107 0.707107 0.707107 -0.707107 17.5977 0)" stroke="black"
-                        stroke-width="3" />
-                </svg>
-            </span>
-            <div class="line1_right">
-                <h4>리뉴얼 전 사이트의 문제점 해결</h4>
-                <ul>
-                    <li>부드러운 animation 효과, hover, transition 값을 적용하여 해결</li>
-                    <li>웹사이트의 전체적인곳에 포인트컬러를 적용하여 통일성을 줌</li>
-                    <li>이미지에 display: grid를 적용하고 움직임을 표현하여 사용자의 흥미 유발</li>
-                </ul>
-            </div>
+    <!-------------- /news ------------->
+
+    <!------------ location ------------>
+    <div class="location">
+      <h5>location</h5>
+      <!-- * 카카오맵 - 지도퍼가기 -->
+      <!-- 1. 지도 노드 -->
+      <div id="daumRoughmapContainer1686640129857" style="width:100%"
+        class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+      <script charset="UTF-8" class="daum_roughmap_loader_script"
+        src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+      <!-- 3. 실행 스크립트 -->
+      <div class="kakaomap">
+        <script>
+          new daum.roughmap.Lander({
+            "timestamp": "1686640129857",
+            "key": "2f5gd",
+            // "mapWidth": "370",
+            "mapHeight": "390"
+          }).render();
+        </script>
+      </div>
+      <div class="textbox">
+        <div class="text_box1">
+          <h6>네비게이션 검색</h6>
+          <ul>
+            <li>- 전화검색 : 064)796-0001</li>
+            <li>- 명칭검색 : 한림공원</li>
+            <li>- 주소검색 : 제주특별자치도 제주시 한림읍 한림로 300 (우. 63011)</li>
+            <li>- 주차무료</li>
+          </ul>
         </div>
-
-        <div class="line2 grid">
-            <div class="line2_left">
-                <h4>리뉴얼을 진행하며 생긴 문제점</h4>
-                <p>history 섹션에 ::after 를 이용한 실선과 점을 제작하는 과정에서 실선과
-                    점 사이에 margin 값을 필요로 하였지만 실선과 점이 교차하며 정확한 값
-                    을 입력하기에는 다소 어려움이 생김.</p>
-                <p>또한 반응형 웹사이트를 제작하면서 모바일에서는 숨김이 필요한 요소에
-                    display: none 값을 입력하면 빈 공간이 아닌 여백이 생겨 계획했던 디자
-                    인을 벗어난 문제점.</p>
-            </div>
-            <span class="svg"><svg width="47" height="57" viewBox="0 0 47 57" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <line x1="1.93934" y1="55.9393" x2="30.4393" y2="27.4393" stroke="white" stroke-width="3" />
-                    <line x1="1.93934" y1="55.9393" x2="30.4393" y2="27.4393" stroke="black" stroke-width="3" />
-                    <line y1="-1.5" x2="40.3051" y2="-1.5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 3 0)"
-                        stroke="white" stroke-width="3" />
-                    <line y1="-1.5" x2="40.3051" y2="-1.5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 3 0)"
-                        stroke="black" stroke-width="3" />
-                    <line x1="16.537" y1="55.9393" x2="45.037" y2="27.4393" stroke="white" stroke-width="3" />
-                    <line x1="16.537" y1="55.9393" x2="45.037" y2="27.4393" stroke="black" stroke-width="3" />
-                    <line y1="-1.5" x2="40.3051" y2="-1.5"
-                        transform="matrix(0.707107 0.707107 0.707107 -0.707107 17.5977 0)" stroke="white"
-                        stroke-width="3" />
-                    <line y1="-1.5" x2="40.3051" y2="-1.5"
-                        transform="matrix(0.707107 0.707107 0.707107 -0.707107 17.5977 0)" stroke="black"
-                        stroke-width="3" />
-                </svg>
-            </span>
-            <div class="line2_right">
-                <h4>리뉴얼을 진행하며 생긴 문제점 해결</h4>
-                <p>실선은 width를 100% 값을 주며, 점(span) 에 부모(span) 을 추가하여
-                    부모(span)에 background 값을 white(#fff) 을 입력하여 마진값이 생
-                    긴것 처럼 표현 하였다. 모바일, 테블릿 환경에서도 구현 지장 없음.</p>
-                <p>display: none 을 입력시 요소가 아예 사라져 디자인이 무너지는 현상을
-                    visibillity: none 을 사용하여 요소의 자리는 그대로 유지하되, 요소는 숨
-                    길 수 있도록 해결함.</p>
-            </div>
+        <div class="text_box2">
+          <h6>제주공항 출발</h6>
+          <ul>
+            <li>- 자동차(약 50분)<span>1132도로(일주도로) → 한림 → 협재 → 한림공원</span></li>
+            <li>- 버스 (약 90분)<span>102번 급행버스 → 한림환승 정류장 → 202번 간선버스 → 한림공원</span></li>
+          </ul>
         </div>
-    </section>
+        <div class="text_box3">
+          <h6>서귀포시 출발</h6>
+          <ul>
+            <li>- 자동차 (약 50분)<span>1132도로1132도로(일주도로) → 창천 → 1116도로 → 금악 → 명월 → 협재 →한림공원</span></li>
+            <li>- 버스 (약 90분)<span>102번 급행버스→ 신창 환승 정류장→ 202번 간선버스→ 한림공원</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-------------- /location -------------->
+  </main>
 
-    <footer>
-        <h3>hallim park</h3><br>
-        <a href="https://win401.github.io/SungWoo-s-Portfolio/project2/project2_sub.html" target="_blank">🏕️반응형 웹 사이트
-            바로가기
-            :
-            <span>https://win401.github.io/SungWoo-s-Portfolio/project2/project2.html</span></a>
-    </footer>
+  <footer>
+    <div class="footer_img">
+      <h1>Hallim park<span>with nature</span></h1>
+      <div class="icon">
+        <a href="#"><img src="./images/facebook-logo.png" alt="face"></a>
+        <a href="#"><img src="./images/instagram.png" alt="insta"></a>
+        <a href="#"><img src="./images/twitter.png" alt="twee"></a>
+        <a href="#"><img src="./images/youtube-logo.png" alt="yt"></a>
+      </div>
+    </div>
+    <div class="footer_text">
+      <ul>
+        <li>한림공원 소개</li>
+        <li>테마9</li>
+        <li>365꽃세상</li>
+        <li>즐길거리</li>
+        <li>공원소식</li>
+      </ul>
+      <ul>
+        <li>이용약관</li>
+        <li>개인정보처리방침</li>
+        <li class="port"><a href="#">포트폴리오 바로가기</a></li>
+      </ul>
+      <ul>
+        <li>한림공원</li>
+        <li>주소 제주특별자치도 제주시 한림로 300 | 전화번호 064-796-0000</li>
+        <li>이메일 winnerv401@gmail.com | 팩스번호 064-796-0000</li>
+        <li>사업자등록번호 616-81-00000 | 대표자 </li>
+      </ul>
+    </div>
+  </footer>
 </body>
 
 </html>

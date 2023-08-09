@@ -1,4 +1,4 @@
-@charset 'utf-8';
+@charset "utf-8";
 
 @import url(../common/style/fonts.css);
 
@@ -68,6 +68,7 @@ header ul {
   align-items: center;
   justify-content: center;
 }
+
 .ham span {
   display: block;
   background: #fff;
@@ -76,11 +77,13 @@ header ul {
   border-radius: 3px;
   transition: margin 0.25s 0.25s, transform 0.25s;
 }
+
 .ham .bar1 {
   margin-bottom: 8px;
 }
-.ham .bar2 {
-}
+
+.ham .bar2 {}
+
 .ham .bar3 {
   margin-top: 8px;
 }
@@ -94,9 +97,11 @@ header ul {
   margin-bottom: -4px;
   transform: rotate(45deg);
 }
+
 .ham.active .bar2 {
   transform: rotate(45deg);
 }
+
 .ham.active .bar3 {
   margin-top: -4px;
   transform: rotate(135deg);
@@ -200,6 +205,7 @@ header .menu_box li:hover {
 }
 
 @keyframes change-scale {
+
   0%,
   40%,
   100% {
@@ -234,18 +240,23 @@ header .menu_box li:hover {
 .rect7 {
   animation-delay: 0.6s;
 }
+
 .rect8 {
   animation-delay: 0.7s;
 }
+
 .rect9 {
   animation-delay: 0.8s;
 }
+
 .rect10 {
   animation-delay: 0.9s;
 }
+
 .rect11 {
   animation-delay: 1s;
 }
+
 .rect12 {
   animation-delay: 1.1s;
 }
@@ -316,7 +327,7 @@ header .menu_box li:hover {
   position: relative;
   width: 100%;
   max-width: 100%;
-  height: 70vh;
+  height: 80vh;
   padding: 100px 0;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -501,9 +512,11 @@ header .menu_box li:hover {
   font-size: 1.563rem;
   font-family: 'Universal Serif', 'Cinzel', 'Gentium Book Plus';
 }
+
 .bottom p a {
   text-decoration: underline;
 }
+
 .bottom .left_box img {
   width: 200px;
 }
@@ -531,6 +544,7 @@ header .menu_box li:hover {
   height: 55px;
   border: 1px solid #fff;
 }
+
 /* footer */
 
 footer ul.grid {

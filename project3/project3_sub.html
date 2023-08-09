@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>project2</title>
     <link rel="stylesheet" href="../common/style/minireset.min.css">
-    <link rel="stylesheet" href="./project2_sub.css">
+    <link rel="stylesheet" href="./project3_sub.css">
 </head>
 
 <body>
@@ -18,16 +18,16 @@
                  172.462h529.846v45.384H258.845l171.846 171.846-32.614 31.615Z" />
                 </svg><a href="https://win401.github.io/SungWoo-s-Portfolio/">portfolio</a>
         </div>
-        <h2>project2 : hallim park<span>반응형 웹사이트</span></h2>
+        <h2>project3 : universal music<span>js 웹사이트</span></h2>
         <div class="img_box flex">
-            <img src="../images/project2.png" alt="main img">
+            <img src="./images/pj3_sub_title_img.png" alt="main img">
             <div class="img_box_text">
-                <h1>hallim</h1>
+                <h1>universal</h1>
                 <ul class="flex">
-                    <li>#반응형</li>
-                    <li>#HTML5</li>
-                    <li>#CSS3</li>
-                    <li>#figma</li>
+                    <li>figma</li>
+                    <li>CSS3</li>
+                    <li>#jQuery</li>
+                    <li>#js</li>
                 </ul>
             </div>
         </div>
@@ -38,8 +38,7 @@
         <ol>
             <li>리뉴얼 사이트의 문제점 파악</li>
             <li>Figma 를 이용한 사이트 디자인</li>
-            <li>display: grid 사용</li>
-            <li>media query를 이용한 반응형 웹사이트 제작</li>
+            <li>jQuery 라이브러리 적용하기</li>
         </ol>
     </section>
 
@@ -48,58 +47,66 @@
         <div class="style_guide">
             <table>
                 <th>keyword</th>
-                <td>푸릇한, 자연친화적인, 청량한</td>
+                <td>화려한, 깔끔한</td>
                 <tr>
                     <th>font</th>
-                    <td>Cormorant Garamond를 사용하여 자연친화적인 감성 강조</td>
+                    <td>Universal Serif 를 사용하여 유니버셜의 이미지 강조</td>
                 </tr>
                 <tr>
                     <th></th>
-                    <td>Noto Sans KR 는 가독성과 깔끔한 디자인을 위하여 사용</td>
+                    <td>Universal Serif 를 사용하여 유니버셜의 이미지 강조</td>
                 </tr>
                 <tr>
                     <th></th>
-                    <td>Montserrat 제목을 한눈에 표시하기 위함</td>
+                    <td>가독성이 필요한 부분에는 Noto Sans KR 사용</td>
                 </tr>
                 <tr>
                     <th>style</th>
-                    <td>H1 / Cormorant Garamond / 100 </td>
+                    <td>H1 / Universal Serif / 330</td>
                 </tr>
                 <tr>
                     <th></th>
-                    <td>H2 / Cormorant Garamond / 70 </td>
+                    <td>H1 / Universal Serif / 280</td>
                 </tr>
                 <tr>
                     <th></th>
-                    <td>H3 / Cormorant Garamond / 60 </td>
+                    <td>H1 / Universal Serif / 130</td>
                 </tr>
                 <tr>
                     <th></th>
-                    <td>H4 / Montserrat / 21</td>
+                    <td>H1 / Universal Serif / 80</td>
                 </tr>
                 <tr>
                     <th></th>
-                    <td>H4 / Montserrat / 20</td>
+                    <td>p / PT Sans Narrow / 34</td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>p / Noto Sans KR / 30</td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>p / PT Sans Narrow / 25</td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>p / Noto Sans KR / 18</td>
                 </tr>
                 <tr>
                     <th></th>
                     <td>p / Noto Sans KR / 16</td>
                 </tr>
                 <tr>
-                    <th></th>
-                    <td>p / Noto Sans KR / 14</td>
-                </tr>
-                <tr>
                     <th>color</th>
-                    <td class="background1">#6F914B</td>
+                    <td class="background1">#191619</td>
                 </tr>
                 <tr>
                     <th></th>
-                    <td class="background2">#879A82</td>
+                    <td class="background2">#FFFFFF</td>
                 </tr>
                 <tr>
                     <th></th>
-                    <td class="background3">#222222</td>
+                    <td class="background3">#10B3E2</td>
                 </tr>
             </table>
         </div>
@@ -108,18 +115,15 @@
     <section class="publishing flex">
         <h3>publishing</h3>
         <ul>
-            <li><span>media="(min-width:768px),(min-width:1200px)" 값을 적용하여 모바일, 테블릿, pc버전 모두 적응 가능</span></li>
-            <li>main 이미지 h1에 animation 값을 적용하여 보다 동적인 메인 화면 구성</li>
-            <li>header h1::after 를 이용한 실선 디자인 요소 제작</li>
-            <li>header nav 에 justify-content: space-between을 사용하여 로고, 메뉴, 로그인의 간격 조정</li>
-            <li>display: flex가 사용되는 요소에 class명 flex를 사용하여 필요한 요소에 flex가 적용되도록 작성</li>
-            <li>모바일 버전에서의 필요없는 요소는 display: none 을 적용하여 보다 깔끔하고 간결한 화면 제작</li>
-            <li>visibility: visible, visibillity: none 을 사용하여 display: none 의 특성인 요소가 사라지는 것이 아닌 숨김만을 필요로 하는 곳에 적용</li>
-            <li>news 섹션에서 모바일 버전은 text-overflow: ellipsis 사용하여 사용자에게 문장이 더 길다는 것을 인지 시켜줌</li>
-            <li>display: grid 와 gap: 을 적용하여 깔끔하고 스타일리쉬한 이미지 배치</li>
-            <li>grid-template-columns: repeat(3, 1fr) 을 적용하여 간결한 코드 작성 방식</li>
-            <li>main .history figure h6 요소에 white-space: nowrap 을 적용하여 텍스트의 줄바꿈을 방지</li>
-            <li>카카오맵 지도는 div 생성후, sdk.js?appkey=(발급받은 APP KEY) 를 입력하여 카카오맵 지도 삽입</li>
+            <li>AOS 플러그인 적용하여 스크롤 시 움직임 구현</li>
+            <li>onmouseover="img1(this)" onmouseout="img2(this)", .setAttribute('src', '') 를 이용하여 mouseover시 이미지 변환</li>
+            <li>e.clientX, e.clientY 를 사용하여 마우스 커서를 따라다니는 요소 적용</li>
+            <li>requestAnimationFrame(); 을 적용하여 커서 대신하는 요소의 움직임 더욱 부드럽게 적용</li>
+            <li>:hover 시 transform: translateY 를 사용하여 호버시 이미지 움직임 적용</li>
+            <li>addClass 를 적용하여 a태그 호버시 마우스 커서 크기 변경</li>
+            <li>메인 이미지 섹션에 swiper 적용하여 유니버셜 뮤직의 아티스트 이미지를 보여줌</li>
+            <li>햄버거 메뉴바 toggleClass 적용하여 누를때 마다 스타일 변경</li>
+            <li>햄버거 메뉴바에 j Query UI 를 적용하여 슬라이드 다운 스타일 구현</li>
         </ul>
     </section>
 
@@ -129,8 +133,8 @@
             <div class="line1_left">
                 <h4>리뉴얼 전 사이트의 문제점 파악</h4>
                 <ul>
-                    <li>사이트의 디자인이 다소 딱딱하고, 한림공원의 자연친화적인 느낌이 부족함</li>
-                    <li>포인트로 정해진 컬러가 없으며, 사용자의 흥미를 유발 할 수 있는 요소가 부족함</li>
+                    <li>메인 첫 화면의 이미지 픽셀 깨짐</li>
+                    <li>움직이는 요소의 부재로 사용자의 흥미를 끌 수 없다고 판단 </li>
                 </ul>
             </div>
             <span class="svg"><svg width="47" height="57" viewBox="0 0 47 57" fill="none"
@@ -154,9 +158,9 @@
             <div class="line1_right">
                 <h4>리뉴얼 전 사이트의 문제점 해결</h4>
                 <ul>
-                    <li>부드러운 animation 효과, hover, transition 값을 적용하여 해결</li>
+                    <li>용량, 화질이 적절한 이미지 사용</li>
                     <li>웹사이트의 전체적인곳에 포인트컬러를 적용하여 통일성을 줌</li>
-                    <li>이미지에 display: grid를 적용하고 움직임을 표현하여 사용자의 흥미 유발</li>
+                    <li>메인 첫 화면에 노래가 재생되는 듯한 막대 움직임을 표현하여 사용자의 흥미 유발</li>
                 </ul>
             </div>
         </div>
@@ -164,12 +168,9 @@
         <div class="line2 grid">
             <div class="line2_left">
                 <h4>리뉴얼을 진행하며 생긴 문제점</h4>
-                <p>history 섹션에 ::after 를 이용한 실선과 점을 제작하는 과정에서 실선과
-                    점 사이에 margin 값을 필요로 하였지만 실선과 점이 교차하며 정확한 값
-                    을 입력하기에는 다소 어려움이 생김.</p>
-                <p>또한 반응형 웹사이트를 제작하면서 모바일에서는 숨김이 필요한 요소에
-                    display: none 값을 입력하면 빈 공간이 아닌 여백이 생겨 계획했던 디자
-                    인을 벗어난 문제점.</p>
+                <p>마우스 커서를 따라다니는 요소 작업 시 따라다니는 속도가 느려 사용자가
+                    사용하기에 불편함을 느낄 수 있음</p>
+                <p>노트북 1440px 에서 계속해서 움직이는 텍스트가 아랫부분이 잘려보임</p>
             </div>
             <span class="svg"><svg width="47" height="57" viewBox="0 0 47 57" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -191,22 +192,20 @@
             </span>
             <div class="line2_right">
                 <h4>리뉴얼을 진행하며 생긴 문제점 해결</h4>
-                <p>실선은 width를 100% 값을 주며, 점(span) 에 부모(span) 을 추가하여
-                    부모(span)에 background 값을 white(#fff) 을 입력하여 마진값이 생
-                    긴것 처럼 표현 하였다. 모바일, 테블릿 환경에서도 구현 지장 없음.</p>
-                <p>display: none 을 입력시 요소가 아예 사라져 디자인이 무너지는 현상을
-                    visibillity: none 을 사용하여 요소의 자리는 그대로 유지하되, 요소는 숨
-                    길 수 있도록 해결함.</p>
+                <p>requestAnimationFrame(); 을 사용하여 움직임이 더욱 부드럽고 반응성을
+                    빠르게 해결함</p>
+                <p>media query 를 적용하여 노트북 환경에서도 글자가 잘려보이지 않도록
+                    반응형웹 사이트로 해결함</p>
             </div>
         </div>
     </section>
 
     <footer>
-        <h3>hallim park</h3><br>
-        <a href="https://win401.github.io/SungWoo-s-Portfolio/project2/project2.html" target="_blank">🏕️반응형 웹 사이트
-            바로가기
+        <h3>universal music</h3><br>
+        <a href="https://win401.github.io/SungWoo-s-Portfolio/project3/project3.html" target="_blank">universal
+            music 사이트 바로가기
             :
-            <span>https://win401.github.io/SungWoo-s-Portfolio/project2/project2.html</span></a>
+            <span>https://win401.github.io/SungWoo-s-Portfolio/project3/project3.html</span></a>
     </footer>
 </body>
 
