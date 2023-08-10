@@ -7,13 +7,11 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
   height: 30%;
-  background: linear-gradient(
-    #faff00 10%,
-    #fe543b 30%,
-    #f54a7d 40%,
-    #6259a8 70%,
-    #4d41ae 100%
-  );
+  background: linear-gradient(#faff00 10%,
+      #fe543b 30%,
+      #f54a7d 40%,
+      #6259a8 70%,
+      #4d41ae 100%);
 
   border-radius: 10px;
 }
@@ -84,14 +82,12 @@ header {
 }
 
 header .radius_background {
-  background: linear-gradient(
-    -15deg,
-    #faff00 20%,
-    #fe543b 40%,
-    #f54a7d 50%,
-    #6259a8 70%,
-    #4d41ae 100%
-  );
+  background: linear-gradient(-15deg,
+      #faff00 20%,
+      #fe543b 40%,
+      #f54a7d 50%,
+      #6259a8 70%,
+      #4d41ae 100%);
   width: 60%;
   aspect-ratio: 1;
   position: absolute;
@@ -478,7 +474,7 @@ header .main_project span {
 /*************************** main ****************************/
 
 main {
-  height: 650vh;
+  height: 7020px;
   /* overflow: hidden; */
   position: relative;
 }
@@ -496,7 +492,7 @@ main .main_top svg {
 }
 
 main .main_text {
-  height: 650vh;
+  height: 7020px;
   background: linear-gradient(#7d83d1 80%, #111);
   padding-top: 1000px;
   color: white;
@@ -720,7 +716,7 @@ main .main_text .main_illust .stone5 {
 /*********************** skill ************************/
 
 main .main_text .skill {
-  margin-top: 135vh;
+  margin-top: 1500px;
   position: relative;
   overflow: hidden;
   padding-left: 200px;
@@ -853,8 +849,7 @@ main .img #star4 {
   transform-origin: bottom;
 }
 
-main .img #star5 {
-}
+main .img #star5 {}
 
 main .img #star6 {
   left: 20%;
@@ -906,7 +901,7 @@ main .img #light3 {
 footer {
   z-index: 9;
   background-color: #111;
-  height: 70vh;
+  height: 650px;
   color: #fff;
 }
 

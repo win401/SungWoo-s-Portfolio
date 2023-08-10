@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+main .main_top .shadow_gradient svg {
+    width: 1000%;
+    /* display: none; */
+    transform: translate(-300px, -300px);
+}
+
+
+.footer_gradient {
+    width: 50%;
+    /* display: none; */
+}
+
+main {
+    height: 800vh;
+    padding-bottom: 500vh;
+}
+
+.skill {
+    margin-bottom: 100vh;
+}
+
+.top {
+    transform: translateY(30px);
+}
+
+.container {
+    transform: translateY(-200px);
+}
+
+.main_text .about {
+    margin-top: 300px;
+}
+
+.main_text .about_text {
+    font-size: 2rem;
+}
