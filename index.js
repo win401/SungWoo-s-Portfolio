@@ -3,11 +3,11 @@ AOS.init({
   duration: 1200,
 });
 
-const bg1 = document.querySelector('.radius_background');
-const gradient = document.querySelector('.shadow_gradient');
-const star = document.querySelector('#star6');
+const bg1 = document.querySelector(".radius_background");
+const gradient = document.querySelector(".shadow_gradient");
+const star = document.querySelector("#star6");
 
-this.addEventListener('mousemove', (evt) => {
+this.addEventListener("mousemove", (evt) => {
   let x = evt.clientX;
   let y = evt.clientY;
 
@@ -18,80 +18,80 @@ this.addEventListener('mousemove', (evt) => {
 
 // 현재시간 출력
 // const date = document.querySelector('.date span');
-const hours = document.querySelector('.hours span');
-const minutes = document.querySelector('.minutes span');
-const seconds = document.querySelector('.seconds span');
+const hours = document.querySelector(".hours span");
+const minutes = document.querySelector(".minutes span");
+const seconds = document.querySelector(".seconds span");
 const now = new Date();
 
 // 재귀함수 방법
 function updateTime() {
   const now = new Date();
   // date.textContent = String(now.getDate()).padStart(2, '0');
-  hours.textContent = String(now.getHours()).padStart(2, '0');
-  minutes.textContent = String(now.getMinutes()).padStart(2, '0');
-  seconds.textContent = String(now.getSeconds()).padStart(2, '0');
+  hours.textContent = String(now.getHours()).padStart(2, "0");
+  minutes.textContent = String(now.getMinutes()).padStart(2, "0");
+  seconds.textContent = String(now.getSeconds()).padStart(2, "0");
 
   setTimeout(updateTime, 1000); // setInterval()을 이용하는 것보다 메모리 측면에서 효율적
 }
 updateTime();
 
 // project1 urbanic
-$('.pj1').on('mouseenter', () => {
-  $('.project1').addClass('active');
+$(".pj1").on("mouseenter", () => {
+  $(".project1").addClass("active");
 });
-$('.pj1').on('mouseleave', () => {
-  $('.project1').removeClass('active');
+$(".pj1").on("mouseleave", () => {
+  $(".project1").removeClass("active");
 });
 
 // project2 한림공원 이미지
-$('.pj2').on('mouseenter', () => {
-  $('.project2').addClass('active');
+$(".pj2").on("mouseenter", () => {
+  $(".project2").addClass("active");
 });
-$('.pj2').on('mouseleave', () => {
-  $('.project2').removeClass('active');
+$(".pj2").on("mouseleave", () => {
+  $(".project2").removeClass("active");
 });
 
 // project3 universal
-$('.pj3').on('mouseenter', () => {
-  $('.project3').addClass('active');
+$(".pj3").on("mouseenter", () => {
+  $(".project3").addClass("active");
 });
-$('.pj3').on('mouseleave', () => {
-  $('.project3').removeClass('active');
+$(".pj3").on("mouseleave", () => {
+  $(".project3").removeClass("active");
 });
 
 // project4 dining note
-$('.pj4').on('mouseenter', () => {
-  $('.project4').addClass('active');
+$(".pj4").on("mouseenter", () => {
+  $(".project4").addClass("active");
 });
-$('.pj4').on('mouseleave', () => {
-  $('.project4').removeClass('active');
+$(".pj4").on("mouseleave", () => {
+  $(".project4").removeClass("active");
 });
 
 // project5 hellinox
-$('.pj5').on('mouseenter', () => {
-  $('.project5').addClass('active');
+$(".pj5").on("mouseenter", () => {
+  $(".project5").addClass("active");
 });
-$('.pj5').on('mouseleave', () => {
-  $('.project5').removeClass('active');
+$(".pj5").on("mouseleave", () => {
+  $(".project5").removeClass("active");
 });
 
 // to top btn
 
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
-  let submain = $('.skill').offset().top;
+  let submain = $(".skill").offset().top;
   if (scroll >= submain) {
-    $('.top_btn').addClass('active');
+    $(".top_btn").addClass("active");
   } else {
-    $('.top_btn').removeClass('active');
+    $(".top_btn").removeClass("active");
   }
 });
 
-$('.top_btn').on('click', (e) => {
+$(".top_btn").on("click", (e) => {
   e.preventDefault();
   scrollTo({
     top: 0,
-    behavior: 'smooth',
+    behavior: "smooth",
   });
 });
 
@@ -99,19 +99,19 @@ $('.top_btn').on('click', (e) => {
 
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
-  let project1 = $('.project1').offset().top;
+  let project1 = $(".project1").offset().top;
   if (scroll >= project1) {
-    $('.menu_text').addClass('active');
+    $(".menu_text").addClass("active");
   } else {
-    $('.menu_text').removeClass('active');
+    $(".menu_text").removeClass("active");
   }
 });
 
-$('.top_btn').on('click', (e) => {
+$(".top_btn").on("click", (e) => {
   e.preventDefault();
   scrollTo({
     top: 0,
-    behavior: 'smooth',
+    behavior: "smooth",
   });
 });
 
@@ -119,67 +119,67 @@ $('.top_btn').on('click', (e) => {
 let prescroll = window.scrollY;
 console.log(prescroll);
 
-$(window).on('scroll', () => {
+$(window).on("scroll", () => {
   //스크롤시 변수에 저장
   let scroll = window.scrollY;
   console.log(scroll);
-  console.log('prescroll00', prescroll);
+  console.log("prescroll00", prescroll);
 
   // 이전 스크롤값이 크면 트루, 스크루 올리면 헤더보임
   if (prescroll > scroll) {
-    $('.menu_text').css({ top: 0 });
+    $(".menu_text").css({ top: 0 });
   } else {
     // 이후 스크롤값이 크면 풜스, 스크루 올리면 헤더가려짐
-    $('.menu_text').css({ top: -90 });
+    $(".menu_text").css({ top: -90 });
   }
 
   prescroll = scroll;
 });
 
 // a 기본값 삭제
-$('a[href="#"]').on('click', (e) => {
+$('a[href="#"]').on("click", (e) => {
   e.preventDefault();
 });
 
 // 메뉴 클릭 페이지 변경시 안보였다가 몇초 뒤에 나타남
-window.addEventListener('load', () => {
-  document.body.classList.add('fade_out');
+window.addEventListener("load", () => {
+  document.body.classList.add("fade_out");
 });
 
 // header menu btn
 //project 버튼
-$('.project_btn').on('click', (e) => {
+$(".project_btn").on("click", (e) => {
   e.preventDefault();
   scrollTo({
     top: 0,
-    behavior: 'smooth',
+    behavior: "smooth",
   });
 });
 // about 버튼
-$('.about_btn').on('click', (e) => {
-  let about = $('.about').offset().top;
+$(".about_btn").on("click", (e) => {
+  let about = $(".about").offset().top;
   e.preventDefault();
   scrollTo({
     top: about,
-    behavior: 'smooth',
+    behavior: "smooth",
   });
 });
 // skill 버튼
-$('.skill_btn').on('click', (e) => {
-  let skill = $('.skill').offset().top;
+$(".skill_btn").on("click", (e) => {
+  let skill = $(".skill").offset().top;
   e.preventDefault();
   scrollTo({
     top: skill,
-    behavior: 'smooth',
+    behavior: "smooth",
   });
 });
 // contect 버튼
-$('.contect_btn').on('click', (e) => {
-  let contect = $('.car').offset().top;
+$(".contect_btn").on("click", (e) => {
+  let contect = $(".car").offset().top;
   e.preventDefault();
   scrollTo({
     top: contect,
-    behavior: 'smooth',
+    behavior: "smooth",
   });
 });
 
@@ -534,7 +534,7 @@ Bird.Tri = Bird.def(
       var _r = Math.floor(x1.x * 255);
       var _g = Math.floor(x1.y * 255);
       var _b = Math.floor(x1.z * 255);
-      return 'rgb(' + _r + ',' + _g + ',' + _b + ')';
+      return "rgb(" + _r + "," + _g + "," + _b + ")";
     },
     norm: function () {
       var v1 = this.Vtxs[0];
@@ -708,8 +708,8 @@ Bird.Matrix = {
 };
 
 function draw() {
-  var c = document.getElementById('canv');
-  Bird.$ = c.getContext('2d');
+  var c = document.getElementById("canv");
+  Bird.$ = c.getContext("2d");
   Bird.canv = {
     w: (c.width = window.innerWidth),
     h: (c.height = window.innerHeight),
@@ -774,7 +774,7 @@ function draw() {
   }
 }
 draw();
-window.addEventListener('resize', function () {
+window.addEventListener("resize", function () {
   if (c.width !== window.innerWidth && c.height !== window.innerHeight) {
     Bird.canv = {
       w: (c.width = window.innerWidth),
@@ -782,3 +782,5 @@ window.addEventListener('resize', function () {
     };
   }
 });
+
+console.log("sungwoo");
