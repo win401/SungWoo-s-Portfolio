@@ -5,7 +5,7 @@ body::-webkit-scrollbar {
   /* 스크롤바의 너비 */
 }
 
-body::-webkit-scrollbar-thumb {
+/* body::-webkit-scrollbar-thumb {
   height: 30%;
   background: linear-gradient(
     #faff00 10%,
@@ -16,7 +16,7 @@ body::-webkit-scrollbar-thumb {
   );
 
   border-radius: 10px;
-}
+} */
 
 body::-webkit-scrollbar-track {
   background: #7d83d1;
