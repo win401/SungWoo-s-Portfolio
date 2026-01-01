@@ -36,12 +36,12 @@ function updateTime() {
 updateTime();
 
 // project1 urbanic
-$(".pj1").on("mouseenter", () => {
-  $(".project1").addClass("active");
-});
-$(".pj1").on("mouseleave", () => {
-  $(".project1").removeClass("active");
-});
+// $(".pj1").on("mouseenter", () => {
+//   $(".project1").addClass("active");
+// });
+// $(".pj1").on("mouseleave", () => {
+//   $(".project1").removeClass("active");
+// });
 
 // project2 한림공원 이미지
 $(".pj2").on("mouseenter", () => {
