@@ -44,6 +44,14 @@ updateTime();
 // });
 
 // project2 한림공원 이미지
+$(".pj1").on("mouseenter", () => {
+  $(".project1").addClass("active");
+});
+$(".pj1").on("mouseleave", () => {
+  $(".project1").removeClass("active");
+});
+
+// project3 universal
 $(".pj2").on("mouseenter", () => {
   $(".project2").addClass("active");
 });
@@ -51,7 +59,7 @@ $(".pj2").on("mouseleave", () => {
   $(".project2").removeClass("active");
 });
 
-// project3 universal
+// project4 dining note
 $(".pj3").on("mouseenter", () => {
   $(".project3").addClass("active");
 });
@@ -59,20 +67,12 @@ $(".pj3").on("mouseleave", () => {
   $(".project3").removeClass("active");
 });
 
-// project4 dining note
+// project5 hellinox
 $(".pj4").on("mouseenter", () => {
   $(".project4").addClass("active");
 });
 $(".pj4").on("mouseleave", () => {
   $(".project4").removeClass("active");
-});
-
-// project5 hellinox
-$(".pj5").on("mouseenter", () => {
-  $(".project5").addClass("active");
-});
-$(".pj5").on("mouseleave", () => {
-  $(".project5").removeClass("active");
 });
 
 // to top btn
